@@ -10,9 +10,13 @@
 
 <body>
 
-  <video  muted loop autoplay>
-    <source src = "videos/Stockholm-Timelapse.mp4" type="video/mp4">
+  <video playsinline autoplay muted loop>
+    <source src="videos/Stockholm-Timelapse.mp4" type="video/mp4">
     </video>
+
+    <div>
+      <img id="me" src="images/me-index.jpg" alt="Furqan Agwan" height="200" width="200"></img>
+    </div>
 
     <aside class="sticky-social">
       <ul>
@@ -23,15 +27,12 @@
       </ul>
     </aside>
 
-    <div class="contents-container">
-      <img src="images/me-index.jpg" class = "image-of-me"></img>
-    </div>
-
-    <div class="footer-container">
-      <footer id="copyright-info">
-        <p>&copy; Copyright 2017, Furqan Agwan</p>
+    <div class="copyright-info">
+      <footer>
+        <small>&copy; Copyright 2017, Furqan Agwan</small>
       </footer>
     </div>
+
   </body>
 
   </html>

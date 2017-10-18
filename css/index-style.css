@@ -3,52 +3,87 @@
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
-body {
 
-	position:fixed;
-	top:0;
-  bottom:0;
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url("../images/Toronto-Mobile.jpg") no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+div{
+  position:relative;
+  height: 100%;
+  width:100%;
+}
+#me{
+  position:absolute;
+  top:0;
   left:0;
   right:0;
-	margin: auto;
+  bottom:0;
+  margin:auto;
+  border-radius: 50%;
+}
+#me:hover{
+
+
+
 }
 
 a{
-text-decoration: none;
+  text-decoration: none;
 }
 
 ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .sticky-social{
-	left: 0;
-	position: fixed;
-	top: 150px;
+  left: 0;
+  position: fixed;
+  top: 150px;
 }
 .sticky-social a{
-	background: #333;
-	color: #fff;
-	display: block;
-	height: 35px;
-	font: 16px "Open Sans", sans-serif;
-	line-height: 35px;
-	position: relative;
-	text-align: center;
-	width: 35px;
+  background: #333;
+  color: #fff;
+  display: block;
+  height: 35px;
+  font: 16px "Open Sans", sans-serif;
+  line-height: 35px;
+  position: relative;
+  text-align: center;
+  width: 35px;
 }
 
 .sticky-social a span{
-	line-height: 35px;
-	left: -120px;
-	position: absolute;
-	text-align: center;
-	width: 120px;
+  line-height: 35px;
+  left: -120px;
+  position: absolute;
+  text-align: center;
+  width: 120px;
 }
 
 .sticky-social a:hover span{
-	left: 100%;
+  left: 100%;
 }
 .sticky-social a [class*="facebook"],
 .sticky-social a[class*="facebook"]:hover,
@@ -66,85 +101,35 @@ ul{
 .sticky-social a[class*="github"]:hover,
 .sticky-social a[class*="github"] span{background: #333;}
 
-.contents-container {
-	position: relative;
-	height:100%;
-	width:100%;
-  margin: 0 auto;
-}
-
-.contents-container img {
-position: fixed;
-animation: fadeintransitions 4s;
-border-radius: 70%;
-
-top:300px;
-right:400px;
-left:400px;
-bottom:400px;
-margin:0 auto;
-
-width:15vw;
-height:15vw;
-
-max-width: 100%;
-height: auto;
-
-
-}
-
-.contents-container img:hover {
-	transform: scale(1.2);
-}
-
-.footer-container{
-
+.copyright-info{
   position: relative;
-  height:100%;
-  width:100%;
-  margin: 0 auto;
-
+  height: 100%;
+  width: 100%;
 }
-#copyright-info{
-position: fixed;
 
-color: white;
-
-top: 95%;
-left: 42%;
-right: 0%;
-bottom: 0px;
-margin: 0 auto;
-
+.copyright-info footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+.copyright-info footer small{
 
 
 }
 
-@keyframes fadeintransitions{
-	from
-	{
-
-     filter: blur(5px);
-		 opacity: 0;
-	}
-	to
-	{
-		filter:blur(0px);
-		opacity: 1;
-	}
-}
-
-video{
-    /*apply a filter over videomake it look vintage*/
-	filter:grayscale(100%);
-
-	top:parent;
-	bottom:parent;
-  left:parent;
-  right:parent;
-
-	width:auto;
-	height:auto;
-	min-height:100%;
-	min-width:100%;
+@media screen and (max-device-width: 800px) {
+  html {
+    background: url("../images/Toronto-Mobile.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  video {
+    display: none;
+  }
 }

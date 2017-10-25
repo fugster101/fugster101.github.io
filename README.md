@@ -1,4 +1,4 @@
 # Website
  
  
- Welcome to my repositrie fro my Personal website
+ Welcome to my Website

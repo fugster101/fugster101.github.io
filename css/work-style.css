@@ -1,11 +1,25 @@
 body{
-
   position:fixed;
   top:0;
-    bottom:0;
-    left:0;
-    right:0;
-  margin: auto;
-
-
+  bottom:0;
+  left:0;
+  right:0;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }

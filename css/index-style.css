@@ -29,6 +29,7 @@ video {
   background: url("../images/Toronto-Mobile.jpg") no-repeat;
   background-size: cover;
   filter: grayscale(100%);
+  user-select: none;
 }
 
 div{
@@ -45,6 +46,7 @@ div{
   margin:auto;
   border-radius: 50%;
   cursor: pointer;
+  user-select: none;
 }
 #me:hover{
   transform: scale(1.20);

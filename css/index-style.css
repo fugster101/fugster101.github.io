@@ -12,7 +12,6 @@ html, body {
 body{
   overflow: hidden;
 }
-
 video {
   position: fixed;
   top: 50%;
@@ -26,12 +25,11 @@ video {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url("../images/Toronto-Mobile.jpg") no-repeat;
+  background: url("../images/Toronto-Mobile.png") no-repeat;
   background-size: cover;
   filter: grayscale(100%);
   user-select: none;
 }
-
 div{
   position:relative;
   height: 100%;
@@ -51,7 +49,6 @@ div{
 #me:hover{
   transform: scale(1.20);
 }
-
 a{
   text-decoration: none;
 }
@@ -104,13 +101,11 @@ ul{
 .sticky-social a [class*="github"],
 .sticky-social a[class*="github"]:hover,
 .sticky-social a[class*="github"] span{background: #333;}
-
 .copyright-info{
   position: relative;
   height: 100%;
   width: 100%;
 }
-
 .copyright-info footer{
   position: fixed;
   left: 0;
@@ -121,8 +116,7 @@ ul{
   background-color: black;
 }
 .copyright-info footer small{
-
-
+font-family: "Opens Sans", sans-serif;
 }
 .overlay {
   height: 0%;
@@ -168,7 +162,7 @@ ul{
 }
 @media screen and (max-device-width: 800px) {
   html {
-    background: url("../images/Toronto-Mobile.jpg") no-repeat center center fixed;
+    background: url("../images/Toronto-Mobile.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

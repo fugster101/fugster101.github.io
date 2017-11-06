@@ -1,4 +1,4 @@
-@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(https://weloveiconfonts.com/api/?family=entypo);
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
@@ -130,7 +130,6 @@ font-family: "Opens Sans", sans-serif;
   overflow-y: hidden;
   transition: 0.5s;
 }
-
 .overlay-content {
   position: relative;
   top: 25%;
@@ -140,7 +139,6 @@ font-family: "Opens Sans", sans-serif;
   font-family: "Opens Sans", sans-serif;
   font-size:25px
 }
-
 .overlay a {
   padding: 8px;
   text-decoration: none;

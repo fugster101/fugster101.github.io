@@ -1,7 +1,7 @@
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
+*{
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 html, body {
   height: 100%;
@@ -47,62 +47,47 @@ div{
 #me:hover{
   transform: scale(1.20);
 }
-a{
-  text-decoration: none;
-}
-
-ul{
-  list-style: none;
-  margin: 0;
+.social-sticky{
+  margin:0;
   padding: 0;
-}
-.sticky-social{
-  left: 0;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
   position: fixed;
-  top: 150px;
+  top:25%;
+  bottom: 55%;
+  left: 0;
 }
-.sticky-social a{
+.social-sticky li{
+  list-style: none;
+  height: 50px;
   background: #333;
-  color: #fff;
-  display: block;
-  height: 35px;
-  font: 16px "Open Sans", sans-serif;
-  line-height: 35px;
+  border-bottom: 0;
   position: relative;
-  text-align: center;
-  width: 35px;
 }
-
-.sticky-social a span{
-  line-height: 35px;
-  left: -120px;
-  position: absolute;
-  text-align: center;
-  width: 120px;
-}
-
-.sticky-social a:hover span{
-  left: 100%;
-}
-.sticky-social a [class*="facebook"],
-.sticky-social a[class*="facebook"]:hover,
-.sticky-social a[class*="facebook"] span{background: #3b5998;}
-
-.sticky-social a [class*="twitter"],
-.sticky-social a[class*="twitter"]:hover,
-.sticky-social a[class*="twitter"] span{background: #00aced;}
-
-.sticky-social a [class*="linkedin"],
-.sticky-social a[class*="linkedin"]:hover,
-.sticky-social a[class*="linkedin"] span{background: #007bb6;}
-
-.sticky-social a [class*="github"],
-.sticky-social a[class*="github"]:hover,
-.sticky-social a[class*="github"] span{background: #333;}
-.copyright-info{
+.social-sticky li a{
+  text-decoration: none;
+  color: white;
+  display: block;
   position: relative;
   height: 100%;
-  width: 100%;
+  transition: .1s;
+  font-size: 20px;
+}
+.social-sticky li a:hover{
+}
+#facebook:hover{
+  color: #3B5998
+}
+#twitter:hover{
+  color: #1DA1F2;
+}
+#linkedin:hover{
+  color: #0077B5
+}
+
+.social-sticky li:hover{
+  width: 60px;
 }
 .copyright-info footer{
   position: fixed;
@@ -145,11 +130,9 @@ ul{
   display: block;
   transition: 0.3s;
 }
-
 .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
 }
-
 .overlay .closebtn {
   position: absolute;
   top: 20px;
@@ -161,6 +144,11 @@ ul{
   filter: alpha(opacity=50);
 }
 @media screen and (max-width: 800px) {
+  *{
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
   html, body{
     overflow: hidden;
   }

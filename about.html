@@ -5,11 +5,14 @@
 </head>
 <link rel="stylesheet" type="text/css" href="css/about-style.css">
 <link rel="shortcut icon" href="images/favicon/code-break/favicon.ico">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript" src="javascript/about-script.js"> </script>
+<link href="https://cdn.rawgit.com/michalsnik/aos/836dbc05/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/michalsnik/aos/836dbc05/dist/aos.js"></script>
 <body>
   <body>
-    <div class="hero-image">
+    <div class="hero-image" data-aos="zoom-in" data-aos-delay ="100">
       <div class="hero-text">
         <h1>Me</h1>
       </div>
@@ -22,8 +25,19 @@
         <img class="chevron-icon"src="images/expand-arrow.png" alt="floating-chevron" height="20px"width="20px"></img>
       </div>
     </div>
-    <section class="">
-      sdg
-    </section>
+    <main class="main-content">
+      <div class="card">
+        <img src="images/me-index.png" alt="Furqan" height="125vh" width="125vw">
+        <h1>Furqan Agwan</h1>
+        <p class="title"> Computer Science Student</p>
+        <p> De Montfort University</p>
+      </div>
+
+    </main>
+    <script>
+    AOS.init({
+      disable: window.innerWidth > 800
+    });
+    </script>
   </body>
   </html>

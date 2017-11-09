@@ -12,7 +12,7 @@ body{
   overflow: hidden;
 }
 .hero-image {
-  background-image: url("../images/main-frame.png");
+  background-image: url("../images/london-big-ben.png");
   height: 40%;
   background-position: center;
   background-repeat: no-repeat;
@@ -100,6 +100,7 @@ body{
     transform: translate(0, 0);
   }
 }
+
 @media screen and (max-width: 800px)
 {
   html,body{
@@ -137,6 +138,33 @@ body{
   }
   .chevron-icon{
     display: initial;
+  }
+  .main-content{
+    margin:0;
+    z-index: 0;
+    background-image: url("../images/new-york-streets.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .card{
+    top: 3px;
+    margin: 0;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: "Opens Sans",sans-serif;
+  }
+  .title{
+    color: white;
+    font-size: 18px;
+    font-family: "Open Sans",sans-serif;
+  }
+  .card img{
+    width: auto;
+    border-radius: 50%;
   }
   @media screen and (max-device-width: 800px){
     body{

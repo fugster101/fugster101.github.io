@@ -3,7 +3,6 @@
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
-
 html, body {
   height: 100%;
   padding: 0;
@@ -20,12 +19,11 @@ video {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
+  z-index: 0;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url("../images/Toronto-Mobile.png") no-repeat;
   background-size: cover;
   filter: grayscale(100%);
   user-select: none;
@@ -162,12 +160,12 @@ ul{
   opacity: 0.3;
   filter: alpha(opacity=50);
 }
-@media screen and (max-device-width: 800px) {
+@media screen and (max-width: 800px) {
   html, body{
     overflow: hidden;
   }
   html {
-    background: url("../images/Toronto-Mobile.png") no-repeat center center fixed;
+    background: url("../images/Los-Angeles.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -9,9 +9,11 @@ html, body {
   user-select: none;
 }
 body{
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .hero-image {
+
   background-image: url("../images/new-york-subway.png");
   height: 40%;
   background-position: center;
@@ -71,6 +73,13 @@ body{
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
+/*.vertical-line{
+border-left: 6px solid black;
+height: 100%;
+position:absolute;
+left: 50%;
+margin:0;
+}*/
 /* support for older browser */
 @-webkit-keyframes pulse {
   0% {

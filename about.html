@@ -11,33 +11,37 @@
 <link href="https://cdn.rawgit.com/michalsnik/aos/836dbc05/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.rawgit.com/michalsnik/aos/836dbc05/dist/aos.js"></script>
 <body>
-  <body>
-    <div class="hero-image" data-aos="zoom-in" data-aos-delay ="100">
-      <div class="hero-text">
-        <h1>Me</h1>
-      </div>
-      <div class="hero-scroll-icon">
-        <i class="chevron-bottom">
-          Scroll Down
-        </i>
-      </div>
-      <div class="hero-chevron">
-        <img class="chevron-icon"src="images/expand-arrow.png" alt="floating-chevron" height="20px"width="20px"></img>
-      </div>
+  <div id="hamburger-overlay"></div>
+  <div class="hero-image" data-aos="zoom-in" data-aos-delay ="100">
+    <div class="hero-text">
+      <h1>Me</h1>
     </div>
-    <main class="main-content">
-      <div class="card">
-        <img src="images/me-index.png" alt="Furqan" height="125vh" width="125vw">
-        <h1>Furqan Agwan</h1>
-        <p class="title"> Computer Science Student</p>
-        <p> De Montfort University</p>
-      </div>
-
-    </main>
-    <script>
-    AOS.init({
-      disable: window.innerWidth > 800
-    });
-    </script>
-  </body>
-  </html>
+    <div class="hero-scroll-icon">
+      <i class="chevron-bottom">
+        Scroll Down
+      </i>
+    </div>
+    <div class="hero-chevron">
+      <img class="chevron-icon"src="images/expand-arrow.png" alt="floating-chevron" height="20px"width="20px"></img>
+    </div>
+  </div>
+  <main class="main-content">
+    <div class="card">
+      <img src="images/me-index.png" alt="Furqan" height="125vh" width="125vw">
+      <h1>Furqan Agwan</h1>
+      <p class="title"> Computer Science Student</p>
+      <p> De Montfort University</p>
+    </div>
+  </main>
+  <main class="main-content-2">
+    <div class="card2">
+      <h1>Where have I been</h1>
+    </div>
+  </main>
+  <script>
+  AOS.init({
+    disable: window.innerWidth > 800
+  });
+  </script>
+</body>
+</html>

@@ -76,6 +76,9 @@ body{
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
+.CV-Section{
+  display: none;
+}
 /*.vertical-line{
 border-left: 6px solid black;
 height: 100%;
@@ -156,6 +159,16 @@ margin:0;
   .chevron-icon{
     display: initial;
   }
+  .CV-Section{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #efefef;
+    text-align: center;
+    display: initial;
+  }
+
   @media screen and (max-device-width: 800px){
     body{
       overflow-x: hidden;

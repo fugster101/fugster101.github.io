@@ -78,6 +78,10 @@ body{
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
+.twitter-follow-button{
+
+  display: none;
+}
 /* support for older browser */
 @-webkit-keyframes pulse {
   0% {
@@ -197,7 +201,7 @@ body{
     position: relative;
   }
   .card2{
-    top: 30%;
+    top: 5%;
     margin: 0;
     max-width: 100%;
     position: relative;
@@ -208,6 +212,39 @@ body{
   .card2 h1{
     display: inline-block;
   }
+
+  .main-content-3{
+    margin:0;
+    z-index: 0;
+    height: 100%;
+    max-width: 100%;
+    background-image: url("../images/toronto.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .card3{
+    top: 1%;
+    margin: 0;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: "Opens Sans",sans-serif;
+  }
+  .card3 h1{
+    display: inline-block;
+  }
+  .social-1{
+    max-width: 100%;
+    top:10%;
+    text-align: center;
+    position: relative;
+  }
+  .social-1 .twitter-timeline{
+    margin: 0;
+  }
   .title{
     color: white;
     font-size: 18px;
@@ -216,6 +253,13 @@ body{
   .card img{
     width: auto;
     border-radius: 50%;
+  }
+  footer{
+    text-align: center;
+  }
+  .twitter-follow-button{
+    position: absolute;
+    display: initial;
   }
   @media screen and (max-device-width: 800px){
     body{

@@ -152,7 +152,7 @@ div{
     overflow: hidden;
   }
   html {
-    background: url("../images/Los-Angeles.png") no-repeat center center fixed;
+    background: url("../images/los-angeles.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

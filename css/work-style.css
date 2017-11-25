@@ -164,9 +164,29 @@ margin:0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #efefef;
-    text-align: center;
     display: initial;
+  }
+  .CV-Section div{
+position: absolute;
+text-align: center;
+background-color: grey;
+opacity: 0.3;
+filter: alpha(opacity=30);
+width: 100%;
+  }
+  .CV-Section div p{
+font-size: 3vw;
+    font-family: "Open Sans",sans-serif;
+  }
+  .CV-Section div a{
+text-decoration: none;
+color: black;
+  }
+  .CV-Section div a:active{
+text-decoration: none;
+  }
+  .CV-Section div a:hover{
+  text-decoration: none;
   }
 
   @media screen and (max-device-width: 800px){

@@ -5,4 +5,4 @@
 ===============================================================
  Thank You to W3Schools and the StackOverflow community for tutorials. Web development is not my strongest technology, iOS development is where I work best. Do check out my Fitness Application on the App Store called Me-Health, the application is due to release early 2018.
 ===============================================================
-This Website is also mobile optimized.
+This Website is also optimized well for mobile users.

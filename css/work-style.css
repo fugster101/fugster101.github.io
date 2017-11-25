@@ -167,28 +167,41 @@ margin:0;
     display: initial;
   }
   .CV-Section div{
-position: absolute;
-text-align: center;
-background-color: grey;
-opacity: 0.3;
-filter: alpha(opacity=30);
-width: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: grey;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    width: 100%;
   }
   .CV-Section div p{
-font-size: 3vw;
+    font-size: 3vw;
     font-family: "Open Sans",sans-serif;
   }
   .CV-Section div a{
-text-decoration: none;
-color: black;
+    text-decoration: none;
+    color: black;
   }
   .CV-Section div a:active{
-text-decoration: none;
+    text-decoration: none;
   }
   .CV-Section div a:hover{
-  text-decoration: none;
+    text-decoration: none;
   }
-
+  .jobs-mobile{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .leicestercity-footballclub{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/LCFC-football.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   @media screen and (max-device-width: 800px){
     body{
       overflow-x: hidden;

@@ -25,7 +25,6 @@ body{
 .hamburger-container{
   display: none;
 }
-
 .hero-text {
   text-align: center;
   position: absolute;
@@ -110,7 +109,6 @@ body{
     transform: translate(0, 0);
   }
 }
-
 @media screen and (max-width: 800px)
 {
   *{

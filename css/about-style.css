@@ -15,7 +15,7 @@ body{
   overflow: hidden;
 }
 .hero-image {
-  background-image: url("../images/london-big-ben.png");
+  background-image: url("../images/london.png");
   height: 40%;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,7 +79,6 @@ body{
   transform: rotate(135deg);
 }
 .twitter-follow-button{
-
   display: none;
 }
 /* support for older browser */
@@ -148,7 +147,6 @@ body{
     background-size: cover;
     position: relative;
   }
-
   .hero-text{
     font-size: 18vw;
   }
@@ -173,12 +171,11 @@ body{
     margin:0;
     z-index: 0;
     height: 100%;
-    background-image: url("../images/new-york-streets.png");
+    background-image: url("../images/newyork2.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
   }
   .card{
     top: 40%;
@@ -201,7 +198,7 @@ body{
     position: relative;
   }
   .card2{
-    top: 5%;
+    top: 1%;
     margin: 0;
     max-width: 100%;
     position: relative;
@@ -212,13 +209,12 @@ body{
   .card2 h1{
     display: inline-block;
   }
-
   .main-content-3{
     margin:0;
     z-index: 0;
     height: 100%;
     max-width: 100%;
-    background-image: url("../images/toronto.png");
+    background-image: url("../images/seattle.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,6 +230,29 @@ body{
     font-family: "Opens Sans",sans-serif;
   }
   .card3 h1{
+    display: inline-block;
+  }
+  .main-content-4{
+    margin:0;
+    z-index: 0;
+    height: 100%;
+    max-width: 100%;
+    background-image: url("../images/toronto.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .card4{
+    top: 1%;
+    margin: 0;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: "Opens Sans",sans-serif;
+  }
+  .card4 h1{
     display: inline-block;
   }
   .social-1{

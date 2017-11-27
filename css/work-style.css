@@ -134,6 +134,22 @@ margin:0;
     overflow-x: hidden;
     overflow-y: scroll;
   }
+  #topButton{
+   position: fixed;
+   bottom: 5px;
+   right: 5px;
+   z-index: 1;
+   border: none;
+   outline: none;
+   background-color: black;
+   color: white;
+   cursor: pointer;
+   padding: 10px;
+   border-radius: 20%;
+  }
+  #topButton::after{
+background-color: black;
+  }
   .hero-image{
     height: 100%;
     background-position: center;
@@ -221,10 +237,10 @@ margin:0;
     margin: 0;
     height: 100%;
     width: 100%;
+    background-image: url("../images/hastingsdirect.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: red;
     text-align: center;
   }
   .hastingsdirect-insurance h1{
@@ -233,7 +249,7 @@ margin:0;
     z-index: 1;
     font-family: "Open Sans", sans-serif;
     font-size: 5vh;
-    color: white;
+    color: black;
   }
   .debenhams-salesassistant{
     margin: 0;
@@ -257,7 +273,7 @@ margin:0;
     margin: 0;
     height: 100%;
     width: 100%;
-    background-image: url("../images/kualalumpur.png");
+    background-image: url("../images/newyork3.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

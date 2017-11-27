@@ -1,0 +1,17 @@
+{
+	"firstname": "Furqan",
+	"lastname": "Agwan",
+	"age": 21,
+	"University": "De Montfort University",
+	"Course": "Computer Science",
+	"Computer Languages": [
+		"Java",
+		"C",
+		"php",
+		"HTML",
+		"CSS",
+		"Javascript",
+		"JSON",
+		"Swift"
+	]
+}

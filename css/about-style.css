@@ -278,6 +278,23 @@ body{
     position: absolute;
     display: initial;
   }
+  #topButton{
+  
+   position: fixed;
+   bottom: 5px;
+   right: 5px;
+   z-index: 1;
+   border: none;
+   outline: none;
+   background-color: black;
+   color: white;
+   cursor: pointer;
+   padding: 10px;
+   border-radius: 20%;
+  }
+  #topButton::after{
+background-color: black;
+  }
   @media screen and (max-device-width: 800px){
     body{
       overflow-x: hidden;

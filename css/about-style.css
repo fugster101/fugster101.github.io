@@ -14,6 +14,9 @@ html, body {
 body{
   overflow: hidden;
 }
+#topButton{
+  display: none;
+}
 .hero-image {
   background-image: url("../images/london.png");
   height: 40%;
@@ -21,6 +24,9 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+.hero-back{
+  display: none;
 }
 .hamburger-container{
   display: none;
@@ -76,6 +82,9 @@ body{
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
+}
+.container{
+  display: none;
 }
 .twitter-follow-button{
   display: none;
@@ -145,6 +154,17 @@ body{
     background-size: cover;
     position: relative;
   }
+  .hero-back{
+    display: initial;
+    margin: 0;
+    left: 3.5px;
+    top: 3.5px;
+    position: absolute;
+  }
+  .hero-back img{
+    display: initial;
+    cursor: pointer;
+  }
   .hero-text{
     font-size: 18vw;
   }
@@ -196,7 +216,6 @@ body{
     position: relative;
   }
   .card2{
-    top: 1%;
     margin: 0;
     max-width: 100%;
     position: relative;
@@ -206,6 +225,77 @@ body{
   }
   .card2 h1{
     display: inline-block;
+  }
+  .container {
+    display: initial;
+    top: 20%;
+    width: 100%;
+    height: 60%;
+    position: relative;
+  }
+  .container img{
+    width: 100%;
+  }
+  .mySlides {
+    display: none;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  img {
+    margin-bottom: -4px;
+  }
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
   }
   .main-content-3{
     margin:0;
@@ -279,21 +369,21 @@ body{
     display: initial;
   }
   #topButton{
-
-   position: fixed;
-   bottom: 5px;
-   right: 5px;
-   z-index: 1;
-   border: none;
-   outline: none;
-   background-color: black;
-   color: white;
-   cursor: pointer;
-   padding: 10px;
-   border-radius: 20%;
+    display: initial;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 1;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20%;
   }
   #topButton::after{
-background-color: black;
+    background-color: black;
   }
   @media screen and (max-device-width: 800px){
     body{

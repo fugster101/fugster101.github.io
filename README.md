@@ -2,8 +2,15 @@
 
 For Assessments Purposes
 
-Links to all my github page are below as well as the submitted and linked txt file
+Links to all my GitHub page are below as well as the submitted and linked txt file
 https://fugster101.github.io/
+
+
+Tree Structure
+
+References
+
+
 ===============================================================
  Welcome to my Website. The website acts a CV/Resume for myself and was designed as part of one of my University Assignments.
 ===============================================================

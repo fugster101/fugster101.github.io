@@ -4,12 +4,16 @@ For Assessments Purposes
 
 Links to all my GitHub page are below as well as the submitted and linked txt file
 https://fugster101.github.io/
-
-
 Tree Structure
+
+
+
 
 References
 
+(2017) W3Schools Online Web Tutorials. [Online] Available from: https://www.w3schools.com/ [Accessed 1/11/2017]
+
+(2017) CSS-Tricks. [Online] Available from: https://css-tricks.com/ [Accessed 1/11/2017]
 
 ===============================================================
  Welcome to my Website. The website acts a CV/Resume for myself and was designed as part of one of my University Assignments.

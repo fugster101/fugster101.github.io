@@ -229,10 +229,10 @@ margin:0;
    z-index: 1;
    border: none;
    outline: none;
-   background-color: black;
-   color: white;
+   background-color: white;
+   color: black;
    cursor: pointer;
-   padding: 10px;
+   padding: 5px;
    border-radius: 20%;
    display: initial;
   }

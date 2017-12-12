@@ -1,4 +1,10 @@
 # Website
+
+For Assessments Purposes
+
+Links to all my github page are below as well as the submitted and linked txt file
+https://fugster101.github.io/
+===============================================================
  Welcome to my Website. The website acts a CV/Resume for myself and was designed as part of one of my University Assignments.
 ===============================================================
  This website will be updated and maintain by self as soon as new information about me, such as current employer or working projects.

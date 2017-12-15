@@ -1,6 +1,5 @@
-/*Initlise Animate on screen JavaScript libary using the rule to duisable the liabary
+/*Initlise Animate on screen JavaScript libary using the rule to disable the liabary
 if the screen is greater then 800 */
-
 AOS.init({
   disable: window.innerWidth > 800
 });

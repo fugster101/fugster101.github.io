@@ -1,24 +1,15 @@
+/*Mobile first default style*/
 *{
   outline: none;
 }
-html, body {
+html, body{
   height: 100%;
   padding: 0;
   margin: 0;
-}
-body{
   overflow: hidden;
 }
-video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  transform: translateX(-50%) translateY(-50%);
+html {
+  background: url("../images/losangeles.png") no-repeat center center fixed;
   background-size: cover;
 }
 div{
@@ -77,7 +68,6 @@ div{
 #linkedin:hover{
   color: #0077B5
 }
-
 .social-sticky li:hover{
   width: 60px;
 }
@@ -135,24 +125,40 @@ div{
   opacity: 0.3;
   filter: alpha(opacity=50);
 }
-@media screen and (max-width: 800px) {
+.navigation-overlay a {
+  font-size: 20px;
+}
+.overlay a  {
+  font-size: 50px;
+}
+/*Toggle between mobile and desktop starts here*/
+video {
+  display: none;
+}
+/*Desktop rules (Breakpoint) Start here*/
+@media (min-width: 800px){
   *{
     outline: none;
   }
-  html, body{
+  html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  body{
     overflow: hidden;
   }
-  html {
-    background: url("../images/losangeles.png") no-repeat center center fixed;
-    background-size: cover;
-  }
   video {
-    display: none;
-  }
-  .navigation-overlay a {
-    font-size: 20px;
-  }
-  .overlay a  {
-    font-size: 50px;
+    display: initial;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
   }
 }

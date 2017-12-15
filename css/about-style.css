@@ -1,34 +1,47 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+/* Annimations are defined before hand here used both in mobile and desktop view of the webpage*/
+@keyframes pulse {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+/* Default CCS rule is mobile first so no rule block needed,  further designs are defined below for
+desktop expansion */
+*{
   outline: none;
 }
-html, body {
+html,body{
   height: 100%;
   margin: 0%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-body{
-  overflow: hidden;
-}
-#topButton{
-  display: none;
-}
-.hero-image {
+.hero-image{
+  margin: 0;
   background-image: url("../images/london.png");
-  height: 40%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 .hero-back{
-  display: none;
+  display: initial;
+  margin: 0;
+  left: 3.5px;
+  top: 3.5px;
+  position: absolute;
 }
-.hamburger-container{
-  display: none;
+.hero-back img{
+  display: initial;
+  cursor: pointer;
 }
-.hero-text {
+.hero-text{
   text-align: center;
   position: absolute;
   top: 50%;
@@ -37,334 +50,316 @@ body{
   color: white;
   z-index: 1;
   font-family: "Open Sans", sans-serif;
-  font-size: 50px;
+  font-size: 18vw;
 }
 .hero-scroll-icon{
-  display: none;
+  text-align: center;
+  color: white;
   position: absolute;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-.hero-scroll-icon .chevron-bottom{
-  margin-bottom: 10px;
-  display: block;
-  color: white;
-  vertical-align: middle;
+.chevron-bottom{
   text-align: center;
+  font-size: 10vw;
+}
+.hero-scroll-icon .chevron-bottom{
+margin-bottom: 10px;
+display: block;
+color: white;
+vertical-align: middle;
 }
 .hero-chevron{
-  display: none;
   position: absolute;
   top: 90%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   z-index: 1;
   margin-bottom: 5px;
   display: block;
   text-align: center;
 }
-.chevron-icon{
-  display: none;
-}
 .hero-chevron .chevron-icon{
   text-align: center;
   vertical-align: middle;
   animation: pulse 2s infinite;
+  height: 5vh;
+  width: 10vw;
 }
-.chevron-bottom::before{
+.main-content{
+  margin:0;
+  z-index: 0;
+  height: 100%;
+  background-image: url("../images/newyork2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.card{
+  top: 40%;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Opens Sans",sans-serif;
+}
+.main-content-2{
+  margin:0;
+  z-index: 0;
+  height: 100%;
+  max-width: 100%;
+  background-image: url("../images/shangai.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.card2{
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Opens Sans",sans-serif;
+}
+.card2 h1{
+  display: inline-block;
+}
+.container {
+  top: 20%;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  font-family: "Opens Sans", sans-serif;
+}
+.container img{
+  width: 100%;
+}
+.mySlides {
+}
+.cursor {
+  cursor: pointer;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
   top: 0;
-  transform: rotate(135deg);
 }
-.container{
-  display: none;
+img {
+  margin-bottom: -4px;
+}
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container p{
+  font-family: "Opens Sans", sans-serif;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 16.66%;
+}
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.main-content-3{
+  margin:0;
+  z-index: 0;
+  height: 100%;
+  max-width: 100%;
+  background-image: url("../images/seattle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.card3{
+  top: 1%;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Opens Sans",sans-serif;
+}
+.card3 h1{
+  display: inline-block;
+}
+.main-content-4{
+  margin:0;
+  z-index: 0;
+  height: 100%;
+  max-width: 100%;
+  background-image: url("../images/toronto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.card4{
+  top: 1%;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family: "Opens Sans",sans-serif;
+}
+.card4 h1{
+  display: inline-block;
+}
+.social-1{
+  max-width: 100%;
+  top:10%;
+  text-align: center;
+  position: relative;
+}
+.social-1 .twitter-timeline{
+  margin: 0;
+}
+.title{
+  color: white;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+}
+.card img{
+  width: auto;
+  border-radius: 50%;
+}
+footer{
+  text-align: center;
 }
 .twitter-follow-button{
-  display: none;
+  position: absolute;
+  display: initial;
 }
-@keyframes pulse {
-  0% {
-
-    transform: translate(0, 0);
-  }
-  50% {
-
-    transform: translate(0, 10px);
-  }
-  100% {
-
-    transform: translate(0, 0);
-  }
+#topButton{
+  display: initial;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 20%;
 }
-@media screen and (max-width: 800px)
-{
-  *{
+#topButton::after{
+  background-color: black;
+}
+/* Hiding desktop specific elements starts here*/
+.desktop-nav{
+display: none;
+}
+/*  (Expansion) Rule block for minimum screen sizes greater than 800px (Desktop)
+the following defined rule and styles will kick in*/
+@media (min-width: 800px){
+  *, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     outline: none;
-
   }
-  html,body{
+  html, body {
     height: 100%;
     margin: 0%;
-    overflow: scroll;
   }
   body{
-    overflow: auto;
-  }
-  #hamburger-overlay{
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2;
-    transition: 0.3s;
-  }
-  .hero-image{
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .hero-back{
-    display: initial;
-    margin: 0;
-    left: 3.5px;
-    top: 3.5px;
-    position: absolute;
-  }
-  .hero-back img{
-    display: initial;
-    cursor: pointer;
-  }
-  .hero-text{
-    font-size: 18vw;
-  }
-  .hero-scroll-icon{
-    display: initial;
-  }
-  .hero-scroll-icon .chevron-bottom{
-    text-align: center;
-    font-size: 10vw;
-  }
-  .hero-chveron{
-    display: initial;
-  }
-  .hero-chevron .chevron-icon{
-    height: 5vh;
-    width: 10vw;
-  }
-  .chevron-icon{
-    display: initial;
-  }
-  .main-content{
-    margin:0;
-    z-index: 0;
-    height: 100%;
-    background-image: url("../images/newyork2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .card{
-    top: 40%;
-    margin: 0;
-    max-width: 100%;
-    position: relative;
-    text-align: center;
-    color: white;
-    font-family: "Opens Sans",sans-serif;
-  }
-  .main-content-2{
-    margin:0;
-    z-index: 0;
-    height: 100%;
-    max-width: 100%;
-    background-image: url("../images/shangai.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .card2{
-    margin: 0;
-    max-width: 100%;
-    position: relative;
-    text-align: center;
-    color: white;
-    font-family: "Opens Sans",sans-serif;
-  }
-  .card2 h1{
-    display: inline-block;
-  }
-  .container {
-    display: initial;
-    top: 20%;
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    font-family: "Opens Sans", sans-serif;
-  }
-  .container img{
-    width: 100%;
-  }
-  .mySlides {
-  }
-  .cursor {
-    cursor: pointer;
-  }
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-
-  }
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  img {
-    margin-bottom: -4px;
-  }
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  .caption-container p{
-    font-family: "Opens Sans", sans-serif;
-  }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-  .demo {
-    opacity: 0.6;
-  }
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-  .main-content-3{
-    margin:0;
-    z-index: 0;
-    height: 100%;
-    max-width: 100%;
-    background-image: url("../images/seattle.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .card3{
-    top: 1%;
-    margin: 0;
-    max-width: 100%;
-    position: relative;
-    text-align: center;
-    color: white;
-    font-family: "Opens Sans",sans-serif;
-  }
-  .card3 h1{
-    display: inline-block;
-  }
-  .main-content-4{
-    margin:0;
-    z-index: 0;
-    height: 100%;
-    max-width: 100%;
-    background-image: url("../images/toronto.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  .card4{
-    top: 1%;
-    margin: 0;
-    max-width: 100%;
-    position: relative;
-    text-align: center;
-    color: white;
-    font-family: "Opens Sans",sans-serif;
-  }
-  .card4 h1{
-    display: inline-block;
-  }
-  .social-1{
-    max-width: 100%;
-    top:10%;
-    text-align: center;
-    position: relative;
-  }
-  .social-1 .twitter-timeline{
-    margin: 0;
-  }
-  .title{
-    color: white;
-    font-size: 18px;
-    font-family: "Open Sans",sans-serif;
-  }
-  .card img{
-    width: auto;
-    border-radius: 50%;
-  }
-  footer{
-    text-align: center;
-  }
-  .twitter-follow-button{
-    position: absolute;
-    display: initial;
   }
   #topButton{
-    display: initial;
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
+    display: none;
+  }
+  .hero-image {
+    background-image: url("../images/london.png");
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
     z-index: 1;
-    border: none;
-    outline: none;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 20%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 80px;
   }
-  #topButton::after{
-    background-color: black;
+  .desktop-nav{
+  display: initial;
+  color: black;
   }
-  @media screen and (max-device-width: 800px){
-    body{
-      overflow-x: hidden;
-      overflow-x: scroll;
-    }
+
+  /* Hiding mobile elements starts here*/
+  .hero-back{
+    display: none;
   }
+  .hero-scroll-icon{
+    display: none;
+  }
+  .hero-scroll-icon .chevron-bottom{
+    display: none;
+  }
+  .hero-chevron{
+    display: none;
+  }
+  .hero-chevron .chevron-icon{
+    display: none;
+  }
+  .chevron-icon{
+    display: none;
+  }
+  .main-content{
+    display: none;
+  }
+  .main-content-2{
+    display: none;
+  }
+  .main-content-3{
+    display: none;
+  }
+  .main-content-4{
+    display: none;
+  }
+}

@@ -164,13 +164,6 @@ text-align: center;
   color: white;
   font-size: 50px;
 }
-/*.vertical-line{
-border-left: 6px solid black;
-height: 100%;
-position:absolute;
-left: 50%;
-margin:0;
-}*/
 @keyframes pulse {
   0% {
     transform: translate(0, 0);
@@ -364,11 +357,5 @@ background-color: black;
   }
   .desktop-nav{
     display: none;
-  }
-  @media screen and (max-device-width: 800px){
-    body{
-      overflow-x: hidden;
-      overflow-x: scroll;
-    }
   }
 }

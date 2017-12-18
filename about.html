@@ -11,10 +11,12 @@
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 <body>
-  <button onclick="tothetopfucntion()" id="topButton">Top</button>
+  <button id="topButton">
+    <img src="images/topicon.png" alt="topbutton" height="28" width="28" >
+  </button>
   <div class="hero-image">
     <div class="hero-back">
-      <img  src="images/backbuttonwhite.png" alt="homebutton" height="30" width="30" onclick="backbutton()">
+      <img id="backbutton" src="images/backbuttonwhite.png" alt="homebutton" height="30" width="30">
     </div>
     <div class="hero-text">
       <h1>Me</h1>
@@ -30,14 +32,16 @@
   </div>
   <nav class="desktop-nav">
     <div class="wrapper">
-      <ul>
-        <div class="container-left">
+      <div class="container-left">
+        <ul>
           <li><a id="jobs" href="#jobs">Jobs</a></li>
-        </div>
-        <div class="container-right">
+        </ul>
+      </div>
+      <div class="container-right">
+        <ul>
           <li><a id="contact" href="#contact">Contact</a></li>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </div>
   </nav>
   <section class="main-content">
@@ -77,49 +81,49 @@
           <img src="images/dubai.png" alt="dubaiimage">
         </div>
       </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <div class="caption-container">
-          <p id="caption"></p>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/taj-mahal.png" onclick="currentSlide(1)" alt="Agra, India">
         </div>
-        <div class="row">
-          <div class="column">
-            <img class="demo cursor" src="images/taj-mahal.png" onclick="currentSlide(1)" alt="Agra, India">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="images/jordan.png" onclick="currentSlide(2)" alt="Jordan">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="images/palestine.png" onclick="currentSlide(3)" alt="Jerusalem, Palestine">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="images/new-yorkGallery.png"  onclick="currentSlide(4)" alt="New York, USA">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="images/torontoGallery.png"  onclick="currentSlide(5)" alt="Toronto, Canada">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="images/dubai.png" onclick="currentSlide(6)" alt="Dubai, UAE">
-          </div>
+        <div class="column">
+          <img class="demo cursor" src="images/jordan.png" onclick="currentSlide(2)" alt="Amman, Jordan">
         </div>
-      </section>
-      <section class="main-content-3">
-        <div class="card3">
-          <h1>Interests</h1>
+        <div class="column">
+          <img class="demo cursor" src="images/palestine.png" onclick="currentSlide(3)" alt="Jerusalem, Palestine">
         </div>
-      </section>
-      <section class="main-content-4">
-        <div class="card4">
-          <h1>Social</h1>
+        <div class="column">
+          <img class="demo cursor" src="images/new-yorkGallery.png"  onclick="currentSlide(4)" alt="New York, USA">
         </div>
-        <div class="social-1">
-          <a class="twitter-timeline" data-width="315" data-height="315" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/FurqanKadri?ref_src=twsrc%5Etfw">Tweets by FurqanKadri</a>
-          <br>
-          <a href="https://twitter.com/FurqanKadri?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @FurqanKadri</a>
+        <div class="column">
+          <img class="demo cursor" src="images/torontoGallery.png"  onclick="currentSlide(5)" alt="Toronto, Canada">
         </div>
-      </section>
-      <footer>
-      </footer>
-      <script src="javascript/about-script.js"> </script>
-    </body>
-    </html>
+        <div class="column">
+          <img class="demo cursor" src="images/dubai.png" onclick="currentSlide(6)" alt="Dubai, UAE">
+        </div>
+      </div>
+    </section>
+    <section class="main-content-3">
+      <div class="card3">
+        <h1>Interests</h1>
+      </div>
+    </section>
+    <section class="main-content-4">
+      <div class="card4">
+        <h1>Social</h1>
+      </div>
+      <div class="social-1">
+        <a class="twitter-timeline" data-width="315" data-height="315" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/FurqanKadri?ref_src=twsrc%5Etfw">Tweets by FurqanKadri</a>
+        <br>
+        <a href="https://twitter.com/FurqanKadri?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @FurqanKadri</a>
+      </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="javascript/about-script.js"></script>
+  </body>
+  </html>

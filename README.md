@@ -21,6 +21,8 @@ All CSS for mobile is written first with no media query rule defines making the 
 * *iPad Specific*
 * *4K/5K Monitors and iMac's*
 Upon resizing the users windows the website will automatically kick in the different CSS stylesheets.
+
+At the start of this project I had a lack of knowledge regarding responsive design and while CSS frameworks such as bootstrap take care of responsive I felt writing specific CSS code for different screen sizes is much more of a challenge. Intensive research regarding web design patterns was done, where most of the information was provided by Pete LePage (Google Web Fundamentals Technical Writer). The article explains the use of CSS style rules to achieve a certain website design pattern. I have used a fluid design pattern as it still remains to the most popular design pattern to style content on a webpage. A link to the article is provided in the reference section.
 ## SiteMap
 The following section shows the XML markup and HTML site structure (Tree Form) of my website. The XML is particular useful for Search engine optimization for Google and Bing. A xml file of the sitemap is provided in the sitemap folder which is also indented and formatted correctly.
 ### XML Version
@@ -53,7 +55,8 @@ The following section shows the XML markup and HTML site structure (Tree Form) o
 # Cross-Compatibility
 Due to the nature of the Assessment cross-Compatibility was not part of the making criteria and was told not to worry about it. Although future implementations of the website will accommodate for other browsers except for internet explorer because its rubbish.
 
-Animations may not work due to no web kit CSS prefixes.
+Animations may not work on all browser due to no web kit  CSS style prefixes.
+# User Testing
 # Additional Notes
 ## For the Marker
 Please make sure the browser is chrome with the latest update for Compatibility reason chrome works bests and this website was designed and tested using chrome and its inspector feature to point out any errors and element position's and their respective styles.
@@ -66,13 +69,15 @@ For the most part of working on this website most of the commits have been pushe
 
 All multimedia and images used in this website were provided by Pixelbay and all authors have released their images under the Creative Commons (CC0) license.
 
-The design thought and process regarding this website was simple. The idea was to create a simple CV webiste that showcased the normal things you would expect to see on a regular CV. This includes interest and hobbies, technologies I am interested in etc. The website does contain a downloadable cv that user can download if they wish to , however the document is password protected and so editing and copying on the document is not possible.
+The design thought and process regarding this website was simple. The idea was to create a simple CV website that showcased the normal things you would expect to see on a regular CV. This includes interest and hobbies, technologies I am interested in etc. The website does contain a downloadable CV that user can download if they wish to , however the document is password protected and so editing and copying on the document is not possible.
+
+I am not using any CSS library for responsive design such as bootstrap, all code in this website has been written by myself and exploring the stack overflow community for any problems I came across.
 
 Feel free to download any files located on the repository if you wish to keep them locally.
 
 ## Validation and Verification
 
-All webpage pass the W3C CSS and HTML validator, there are some warnings when some of the HTML pages are validated.
+All webpage pass the W3C CSS and HTML validator, there are some minor warnings when some of the HTML pages are validated. The warnings in no way effect the webpages rather they are suggestions provided by W3C.
 
 ## *References*
 (2017) W3Schools Online Web Tutorials. [Online] Available from: [](https://www.w3schools.com/) [Accessed 1/11/2017]

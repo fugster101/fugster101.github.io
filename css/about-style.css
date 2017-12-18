@@ -1,4 +1,5 @@
-/* Annimations are defined before hand here used both in mobile and desktop view of the webpage*/
+/* Annimations are defined before hand here used both in mobile and desktop view of the
+webpage, they are also shared between this and the work page*/
 @keyframes pulse {
   0% {
     transform: translate(0, 0);
@@ -10,10 +11,21 @@
     transform: translate(0, 0);
   }
 }
-/* Default CCS rule is mobile first so no rule block needed,  further designs are defined below for
-desktop expansion */
-*{
+@keyframes fadeInRight{
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* Default CCS rule is mobile first so no rule block needed,
+further designs are defined below for desktop expansion */
+*, *:before, *:after {
   outline: none;
+  box-sizing: border-box;
 }
 html,body{
   height: 100%;
@@ -41,6 +53,38 @@ html,body{
   display: initial;
   cursor: pointer;
 }
+#backbutton{
+  width: auto;
+}
+#topButton{
+  text-align: center;
+  height: 31px;
+  width: 31px;
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  animation: fadeInRight 1.5s;
+}
+#topButton::after{
+  background-color: black;
+}
+#topButton img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
 .hero-text{
   text-align: center;
   position: absolute;
@@ -66,10 +110,10 @@ html,body{
   font-size: 10vw;
 }
 .hero-scroll-icon .chevron-bottom{
-margin-bottom: 10px;
-display: block;
-color: white;
-vertical-align: middle;
+  margin-bottom: 10px;
+  display: block;
+  color: white;
+  vertical-align: middle;
 }
 .hero-chevron{
   position: absolute;
@@ -130,21 +174,16 @@ vertical-align: middle;
   display: inline-block;
 }
 .container {
-  top: 20%;
-  width: 100%;
-  height: 50%;
-  position: absolute;
-  font-family: "Opens Sans", sans-serif;
-}
-.container img{
-  width: 100%;
+  margin: 0;
+  position: relative;
 }
 .mySlides {
 }
 .cursor {
   cursor: pointer;
 }
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 40%;
@@ -160,10 +199,12 @@ vertical-align: middle;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .numbertext {
+  font-family: "Opens Sans", sans-serif;
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -171,16 +212,15 @@ vertical-align: middle;
   top: 0;
 }
 img {
+  width: 100%;
   margin-bottom: -4px;
 }
 .caption-container {
+  font-family: "Opens Sans", sans-serif;
   text-align: center;
   background-color: #222;
   padding: 2px 16px;
   color: white;
-}
-.caption-container p{
-  font-family: "Opens Sans", sans-serif;
 }
 .row:after {
   content: "";
@@ -197,6 +237,21 @@ img {
 .active,
 .demo:hover {
   opacity: 1;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+    overflow:hidden;
+    margin:50px auto;
+    background:white;
+}
+.photobanner{
+    height: auto;
+    width:auto;
+}
+.first{
+   animation: bannermove 30s linear infinite;
 }
 .main-content-3{
   margin:0;
@@ -269,26 +324,9 @@ footer{
   position: absolute;
   display: initial;
 }
-#topButton{
-  display: initial;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-  z-index: 1;
-  border: none;
-  outline: none;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 20%;
-}
-#topButton::after{
-  background-color: black;
-}
 /* Hiding desktop specific elements starts here*/
 .desktop-nav{
-display: none;
+  display: none;
 }
 /*  (Expansion) Rule block for minimum screen sizes greater than 800px (Desktop)
 the following defined rule and styles will kick in*/
@@ -327,8 +365,8 @@ the following defined rule and styles will kick in*/
     font-size: 80px;
   }
   .desktop-nav{
-  display: initial;
-  color: black;
+    display: initial;
+    color: black;
   }
 
   /* Hiding mobile elements starts here*/

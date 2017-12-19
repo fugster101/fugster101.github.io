@@ -1,3 +1,5 @@
+/* Annimations are defined before hand here used both in mobile and desktop view of the
+webpage, they are also shared between this and the work page*/
 @keyframes pulse {
   0% {
     transform: translate(0, 0);
@@ -30,8 +32,8 @@ further designs are defined below for desktop expansion */
 html, body {
   height: 100%;
   margin: 0%;
-  overflow-y: scroll;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 #topButton{
   text-align: center;
@@ -250,8 +252,6 @@ the following defined rule and styles will kick in*/
   html,body{
     height: 100%;
     margin: 0%;
-    overflow-x: hidden;
-    overflow-y: scroll;
   }
   .hero-image{
     width: 100%;
@@ -316,10 +316,15 @@ the following defined rule and styles will kick in*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all .4s ease-out;
   }
   .container-left li{
     text-align: center;
   }
+.container-left:hover{
+  transition: all .4s ease-in;
+  filter: grayscale(100%);
+}
   .container-right{
     position: relative;
     float: right;
@@ -333,9 +338,14 @@ the following defined rule and styles will kick in*/
     background-repeat: no-repeat;
     background-size: cover;
     background-color: blue;
+    transition: all .4s ease-out;
   }
   .container-right li{
     text-align: center;
+  }
+  .container-right:hover{
+    transition: all .4s ease-in;
+    filter: grayscale(100%);
   }
   #jobs{
     margin: 0;

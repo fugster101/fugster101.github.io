@@ -1,3 +1,15 @@
+/* Annimations are defined before hand here used both in mobile and desktop view of the
+webpage, they are also shared between this and the work page*/
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
 /*Mobile first default style*/
 *{
   outline: none;
@@ -26,18 +38,22 @@ div{
   margin:auto;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 1s ease-out;
 }
 #me:hover{
+  transition: all 1s ease-in;
   transform: scale(1.20);
 }
 #jsoncontainer{
+  animation: zoomIn 4s;
   color: white;
   text-align: center;
+  font-style: italic;
   font-family: "Opens Sans" , sans-serif;
   font-size: 45px;
   width: 100%;
   height: 10%;
-  top:70%;
+  top:65%;
   position: absolute;
   margin: 0;
 }

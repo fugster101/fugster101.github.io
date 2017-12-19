@@ -11,8 +11,25 @@ A link to all my other projects is displayed below
 [link:](https://github.com/fugster101?tab=repositories)
 
 ## Hand-drawn Tree Structure
-### Initial Design
-### Final Design
+The following sketch shows the tree structure of this website. This outlines the files falling under the root node(webpage). Since there are only three internal webpages that make up this website the tree diagram is not complicated.
+
+![Tree Structure]
+(GitHubimages/treeStrcuture.png)
+
+## Initial Design
+The following sketches reflect the initial design of my website, however they were subject to change. As this has used a mobile first approach I have focused more on the mobile design rather than the desktop design. I have also mentioned the file names that will be used in the project. I have named all the files in this project something appropriate and meaningful.
+
+### Mobile Design
+**Note: This is not the final design of the website just a UI mock.**
+
+![Mobile Website1]
+(GitHubimages/webpageMobile-1.png)
+![Mobile Website2]
+(GitHubimages/webpageMobile-2.png)
+### Desktop Design
+
+## Final Design of Website (Screenshots)
+
 # Responsive Web Design
 As part of my assessment responsive design was an essential marking criteria for the website. The website was design mobile first in mind making transition to the desktop version of website was smooth and easy. Responsive design also includes responsive images, multimedia and responsive text making sure they fit any browser.
 ## Mobile First

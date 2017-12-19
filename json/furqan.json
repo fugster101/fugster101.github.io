@@ -19,3 +19,8 @@ used via AJAX json reverse request back to the GitHub repo of this project.
     "Swift"
   ]
 }
+/*
+use this URL when maaking a request to this file in raw format
+*/
+
+https://cdn.rawgit.com/fugster101/fugster101.github.io/master/json/furqan.json

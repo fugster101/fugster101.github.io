@@ -4,30 +4,32 @@ This website will be updated and maintain by self as soon as new information abo
 
 This Website is also optimized well for mobile users. The aim was to keep the website simple as it is not a big project, or requires any server-side interaction. The information below shows all the API's, references and technologies used to create this website. Information regarding challenges and Website thought and design process
 ## Assessment
-Links to this GitHub pages website and the project repository are below. A txt file has also be added to the project file structure which includes student information such as p-number and name (Assessment Purposes).
-[link:](https://fugster101.github.io/)
-[link:](https://github.com/fugster101/fugster101.github.io)
+Links to this GitHub pages website and the project repository are below. A txt file has also be added to the project file structure which includes student information such as p-number and name (Assessment Purposes).  
+
+
+[Website](https://fugster101.github.io/)
+[Repository](https://github.com/fugster101/fugster101.github.io)
+
+
 A link to all my other projects is displayed below
-[link:](https://github.com/fugster101?tab=repositories)
+
+
+[Account](https://github.com/fugster101?tab=repositories)
 
 ## Hand-drawn Tree Structure
 The following sketch shows the tree structure of this website. This outlines the files falling under the root node(webpage). Since there are only three internal webpages that make up this website the tree diagram is not complicated.
 
-![Tree Structure]
-(GitHubimages/treeStrcuture.png)
+![Tree Structure](GitHubimages/treeStrcuture.png)
 
 ## Initial Design
 The following sketches reflect the initial design of my website, however they were subject to change. As this has used a mobile first approach I have focused more on the mobile design rather than the desktop design. I have also mentioned the file names that will be used in the project. I have named all the files in this project something appropriate and meaningful.
 
 ### Mobile Design
-**Note: This is not the final design of the website just a UI mock.**
-
-![Mobile Website1]
-(GitHubimages/webpageMobile-1.png)
-![Mobile Website2]
-(GitHubimages/webpageMobile-2.png)
+**Note: This is not the final design of the mobile website just a UI mock. If images are not viewable here please look in the GitHubimages folder for direct access to the image files**
+![Mobile Website1](GitHubimages/webpageMobile-1.png)
+![Mobile Website2](GitHubimages/webpageMobile-2.png)
 ### Desktop Design
-
+**Note: This is not the final design of the mobile website just a UI mock. If images are not viewable here please look in the GitHubimages folder for direct access to the image files**
 ## Final Design of Website (Screenshots)
 
 # Responsive Web Design
@@ -40,9 +42,9 @@ All CSS for mobile is written first with no media query rule defines making the 
 Upon resizing the users windows the website will automatically kick in the different CSS stylesheets.
 
 At the start of this project I had a lack of knowledge regarding responsive design and while CSS frameworks such as bootstrap take care of responsive I felt writing specific CSS code for different screen sizes is much more of a challenge. Intensive research regarding web design patterns was done, where most of the information was provided by Pete LePage (Google Web Fundamentals Technical Writer). The article explains the use of CSS style rules to achieve a certain website design pattern. I have used a fluid design pattern as it still remains to the most popular design pattern to style content on a webpage. A link to the article is provided in the reference section.
-## SiteMap
+# SiteMap
 The following section shows the XML markup and HTML site structure (Tree Form) of my website. The XML is particular useful for Search engine optimization for Google and Bing. A xml file of the sitemap is provided in the sitemap folder which is also indented and formatted correctly.
-### XML Version
+## XML Version
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 -<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -68,7 +70,8 @@ The following section shows the XML markup and HTML site structure (Tree Form) o
 </url>
 </urlset>
 ```
-### HTML Version
+## HTML Version
+
 # Cross-Compatibility
 Due to the nature of the Assessment cross-Compatibility was not part of the making criteria and was told not to worry about it. Although future implementations of the website will accommodate for other browsers except for internet explorer because its rubbish.
 

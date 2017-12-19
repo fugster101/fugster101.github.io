@@ -8,6 +8,8 @@ Links to this GitHub pages website and the project repository are below. A txt f
 
 
 [Website](https://fugster101.github.io/)
+
+
 [Repository](https://github.com/fugster101/fugster101.github.io)
 
 
@@ -27,6 +29,8 @@ The following sketches reflect the initial design of my website, however they we
 ### Mobile Design
 **Note: This is not the final design of the mobile website just a UI mock. If images are not viewable here please look in the GitHubimages folder for direct access to the image files**
 ![Mobile Website1](GitHubimages/webpageMobile-1.png)
+
+
 ![Mobile Website2](GitHubimages/webpageMobile-2.png)
 ### Desktop Design
 **Note: This is not the final design of the mobile website just a UI mock. If images are not viewable here please look in the GitHubimages folder for direct access to the image files**

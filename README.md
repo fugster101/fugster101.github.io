@@ -91,11 +91,13 @@ External files provided on a CDN have to contribute to the loading speed of the 
 
 For the most part of working on this website most of the commits have been pushed to the master branch and so live website was also update, but more recently I have created a new branch to push commits to. The new branch "websitetestbranch" contains all the same code and markdown but acts as a testing project and so when I feel I have made major changes I will merge the branch back to the master branch.
 
-All multimedia and images used in this website were provided by Pixelbay and all authors have released their images under the Creative Commons (CC0) license.
+All multimedia and images used in this website were provided by Unsplash and all authors have released their images under the Creative Commons (CC0) license.
 
 The design thought and process regarding this website was simple. The idea was to create a simple CV website that showcased the normal things you would expect to see on a regular CV. This includes interest and hobbies, technologies I am interested in etc. The website does contain a downloadable CV that user can download if they wish to , however the document is password protected and so editing and copying on the document is not possible.
 
 I am not using any CSS library for responsive design such as bootstrap, all code in this website has been written by myself and exploring the stack overflow community for any problems I came across.
+
+I am pulling in and using jQuery, but please don't take the code into consideration when marking the websites JavaScript I have used plenty vanilla JavaScript in the website.
 
 Feel free to download any files located on the repository if you wish to keep them locally.
 

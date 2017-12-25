@@ -3,127 +3,149 @@
 <head>
   <title>About</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="css/about-style.css">
-  <link rel="shortcut icon" href="images/favicon/code-break/favicon.ico">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" type = "text/css" href = "css/animations.css">
+  <link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://cdn.rawgit.com/michalsnik/aos/836dbc05/dist/aos.css" rel="stylesheet">
-  <script src="https://cdn.rawgit.com/michalsnik/aos/836dbc05/dist/aos.js"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 <body>
-  <button id="topButton">
-    <img src="images/topicon.png" alt="topbutton" height="28" width="28" >
-  </button>
-  <div class="hero-image">
-    <div class="hero-back">
-      <img id="backbutton" src="images/backbuttonwhite.png" alt="homebutton" height="30" width="30">
+  <!--
+  Mobile HTML Markup all here. ID and Class names have symantic menaing.
+-->
+<div class="mobile-wrapper">
+  <div class="mobile-hero-section">
+    <div class="mobile-top-color-bar">
     </div>
-    <div class="hero-text">
-      <h1>Me</h1>
+    <div class="mobile-back-prompt">
+      <img id="backbutton-black-up" src="images/floating-mobile-chevron-black.png" alt="backbutton" height="25" width="25">
     </div>
-    <div class="hero-scroll-icon">
-      <i class="chevron-bottom">
-        Scroll Down
-      </i>
+    <div class="mobile-hero-text">
+      <h1 id="mobile-hero-maintext"> Hi </h1>
+      <p id="mobile-hero-subtext">This page is about me</p>
     </div>
-    <div class="hero-chevron">
-      <img class="chevron-icon" src="images/expand-arrow.png" alt="floating-chevron" height="20" width="20">
+    <div class="mobile-scroll-prompt">
+      <img id="chevron-mobile-icon" src="images/floating-mobile-chevron-black.png" alt="chevron-mobile-icon" height="25" width="25">
+    </div>
+    <button id="mobile-top-button">
+      <img src="images/topicon.png" alt="topbutton" height="28" width="28" >
+    </button>
+  </div>
+  <!--
+  Mobile individual sections start here
+-->
+<section class="mobile-section-one" id="mobile-1">
+  <div class="card">
+    <img src="images/furqan-mobile-icon.png" alt="Furqan" height="125" width="125">
+    <h1>Furqan Agwan</h1>
+    <p class="title"> Computer Science Student</p>
+    <p> De Montfort University</p>
+  </div>
+</section>
+<section class="mobile-section-two">
+  <div class="card2">
+    <h1>Where have I been</h1>
+  </div>
+</section>
+<section class="mobile-section-three">
+  <div class="card3">
+    <h1>Interests</h1>
+  </div>
+</section>
+<section class="mobile-section-four">
+  <div class="card4">
+    <h1>Social</h1>
+  </div>
+  <div class="mobile-social-container">
+    <a class="twitter-timeline" data-width="315" data-height="315" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/FurqanKadri?ref_src=twsrc%5Etfw">Tweets by FurqanKadri</a>
+    <br>
+    <a href="https://twitter.com/FurqanKadri?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @FurqanKadri</a>
+  </div>
+</section>
+</div>
+
+<!--
+Desktop HTML Markup all here. ID and Class names have symantic menaing.
+Beacuse of parallax back feature desktop has its on markup but still mobile first visually
+-->
+<div class="desktop-wrapper">
+  <div class="desktop-hero-section">
+    <div class="desktop-top-color-bar">
+    </div>
+    <div class="desktop-back-prompt">
+    </div>
+    <div class="desktop-hero-text">
+      <h1 id="hero-maintext"> Hi </h1>
+      <p id="hero-subtext">This page is about me</p>
+    </div>
+    <div class="desktop-scroll-prompt">
+      <img id="chevron-desktop-icon" src="images/floating-mobile-chevron-black.png" alt="chevron-mobile-icon" height="50" width="50">
     </div>
   </div>
-  <nav class="desktop-nav">
-    <div class="wrapper">
-      <div class="container-left">
-        <ul>
-          <li><a id="jobs" href="#jobs">Jobs</a></li>
-        </ul>
-      </div>
-      <div class="container-right">
-        <ul>
-          <li><a id="contact" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section class="main-content">
-    <div class="card">
-      <img src="images/me-index.png" alt="Furqan" height="125" width="125">
-      <h1>Furqan Agwan</h1>
-      <p class="title"> Computer Science Student</p>
-      <p> De Montfort University</p>
-    </div>
-  </section>
-  <section class="main-content-2">
-    <div class="card2">
-      <h1>Where have I been</h1></div>
-      <div class="container">
-        <div class="mySlides">
-          <div class="numbertext">1 / 6</div>
-          <img src="images/taj-mahal.png" alt="indiaimage">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">2 / 6</div>
-          <img src="images/jordan.png" alt="jordanimage">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">3 / 6</div>
-          <img src="images/palestine.png" alt="palestineimage">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">4 / 6</div>
-          <img src="images/new-yorkgallery.png" alt="new-yorkimage">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">5 / 6</div>
-          <img src="images/torontogallery.png" alt="torontoimage">
-        </div>
-        <div class="mySlides">
-          <div class="numbertext">6 / 6</div>
-          <img src="images/dubai.png" alt="dubaiimage">
-        </div>
-      </div>
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-      <div class="row">
-        <div class="column">
-          <img class="demo cursor" src="images/taj-mahal.png" onclick="currentSlide(1)" alt="Agra, India">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/jordan.png" onclick="currentSlide(2)" alt="Amman, Jordan">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/palestine.png" onclick="currentSlide(3)" alt="Jerusalem, Palestine">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/new-yorkGallery.png"  onclick="currentSlide(4)" alt="New York, USA">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/torontoGallery.png"  onclick="currentSlide(5)" alt="Toronto, Canada">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/dubai.png" onclick="currentSlide(6)" alt="Dubai, UAE">
-        </div>
-      </div>
-    </section>
-    <section class="main-content-3">
-      <div class="card3">
-        <h1>Interests</h1>
-      </div>
-    </section>
-    <section class="main-content-4">
-      <div class="card4">
-        <h1>Social</h1>
-      </div>
-      <div class="social-1">
-        <a class="twitter-timeline" data-width="315" data-height="315" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/FurqanKadri?ref_src=twsrc%5Etfw">Tweets by FurqanKadri</a>
-        <br>
-        <a href="https://twitter.com/FurqanKadri?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @FurqanKadri</a>
-      </div>
-    </section>
-    <footer>
-    </footer>
-    <script src="javascript/about-script.js"></script>
-  </body>
-  </html>
+  <!--
+  Desktop individual sections start here
+-->
+<section class="desktop-section-one" id="desktop-section-one">
+  <div class="desktop-speach-one">
+    <p>
+      my name is Furqan Agwan.
+      I am a final year Computer Science student studying at <span id="dmu">De Montfort University</span>, Leicester.
+      Some of my hobbies include Basketball, Football, Cricket, Coding and Fitness. I consider myself a avid
+      sneakerhead with a strong intrest in collecting exclusive rare clothing.
+    </p>
+    <br>
+    <p>
+      During my time at University I have worked with many functional and object-oriented languages,
+      as well as many script based languages, but the languages that I extremley enjoyed
+      working with are <span id="java"> Java </span>, <span id="swift"> Swift </span>, <span id="html"> HTML </span>, <span id="css"> CSS </span>,
+      <span id="javascript">JavaScript</span> (jQuery) and <span id="sql">SQL</span> (T-SQL).
+    </p>
+    <br>
+    <p>
+      More recently I have been lucky to have travelled to many parts of the world for holiday.
+      Some of the places I have been are listed in the section below.
+    </p>
+  </div>
+  <div class="desktop-image-talking">
+    <img src="images/furqan-mobile-icon.png" alt="Furqan Agwan" height="70" width="70">
+  </div>
+</section>
+<section class="desktop-section-two">
+  <div class="desktop-speach-two">
+    <p>
+      In the past 5 years I have visited many places across the world. Places such as Toronto, New-York, Brooklyn, New Jersey,
+      Bahgdad, Jurselem, Amman, Jiddha, Dubai and Mumbai.
+    </p>
+  </div>
+  <div class="desktop-image-talking-2">
+    <img src="images/furqan-mobile-icon.png" alt="Furqan Agwan" height="70" width="70">
+  </div>
+</section>
+<section class="desktop-section-three">
+  <div class="desktop-speach-three">
+    <p>
+      my name is Furqan Agwan.
+      I am a final year Computer Science student studying at <span id="dmu">De Montfort University</span>, Leicester.
+      Some of my hobbies include Basketball, Football, Cricket, Coding and Fitness. I consider myself a avid
+      sneakerhead with a strong intrest in collecting exclusive rare clothing.
+    </p>
+  </div>
+</section>
+<section class="desktop-section-four">
+  <div class="desktop-speach-four">
+    <p>
+      my name is Furqan Agwan.
+      I am a final year Computer Science student studying at <span id="dmu">De Montfort University</span>, Leicester.
+      Some of my hobbies include Basketball, Football, Cricket, Coding and Fitness. I consider myself a avid
+      sneakerhead with a strong intrest in collecting exclusive rare clothing.
+    </p>
+  </div>
+</section>
+</div>
+<footer>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="JavaScript/about.js"></script>
+</body>
+</html>

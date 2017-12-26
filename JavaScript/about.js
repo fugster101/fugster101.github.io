@@ -26,7 +26,7 @@ document.getElementById('sql').style.color = "#F80000";
 /*
 Could have used the data object to inject code
 into HTML directly but syntactically its incorrect
-docuumnet.getElementById.innerHTMl = data.Computer_Languages[0..7];
+docuumnet.getElementById.innerHTMl = data.ComputerLanguages[0..7];
 */
  let data = {
   "firstname": "Furqan",
@@ -34,7 +34,7 @@ docuumnet.getElementById.innerHTMl = data.Computer_Languages[0..7];
   "age": 21,
   "University": "De Montfort University",
   "Course": "Computer Science",
-  "Computer Languages": [
+  "ComputerLanguages": [
     "Java",
     "C",
     "php",
@@ -59,6 +59,24 @@ function scrollFunction(){
     document.getElementById("mobile-top-button").style.display = "none";
   }
 }
+
+/*
+Using google maps via Javascript need to umport script tag provided by google but this function will not be used
+*/
+/*
+function initMap() {
+let LatLng = {lat:-25.365, lng: 131.044};
+let map = new google.maps.Map(document.getElementById('googleMaps'), {
+  zoom:4,
+  center: LatLng
+});
+let marker = new google.maps.Marker({
+  position: LatLng,
+  map:map
+});
+}
+*/
+
 $(function(){
 $('body').fadeIn(650);
  $("#chevron-mobile-icon").click(function () {

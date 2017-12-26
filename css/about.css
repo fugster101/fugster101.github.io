@@ -337,9 +337,9 @@ the following defined rule and styles will kick in*/
     left: 20px;
   }
   .desktop-speach-one p{
+    position: relative;
     line-height: 40px;
     font-size: 25px;
-    word-wrap: break-word;
   }
   .desktop-image-talking{
     position: relative;
@@ -352,7 +352,7 @@ the following defined rule and styles will kick in*/
     border-radius: 50%;
   }
   .desktop-section-two{
-    background-image: url("../images/paris-mobile-bg.png");
+    background-image: url("../images/toronto-mobile-bg.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -402,7 +402,7 @@ the following defined rule and styles will kick in*/
     border-radius: 50%;
   }
   .desktop-section-three{
-    background-image: url("../images/toronto-mobile-bg.png");
+    background-image: url("../images/australia-mobile-bg.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -440,45 +440,18 @@ the following defined rule and styles will kick in*/
     font-size: 25px;
     word-wrap: break-word;
   }
-  .desktop-section-four{
-    background-image: url("../images/australia-mobile-bg.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
+  .desktop-social-media{
+    position: relative;
     width: 100%;
   }
-  .desktop-section-four .desktop-speach-four{
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    color: black;
-    font-weight: bold;
-    border: 1px dashed white;
-    background: #fff;
-    box-shadow: -5px 3px 3px black;
-    text-align: left;
-    width: 80%;
-    height: 60%;
-    border-radius: 40px;
-    padding: 60px;
-    margin: 150px auto;
+  .desktop-social-media .desktop-twitter{
+    float: left;
   }
-  .desktop-section-four .desktop-speach-four:before{
-    position: absolute;
-    content: "";
-    border: 25px solid;
-    border-color: transparent transparent white white;
-    box-shadow: -5px 0px 0px 0px black;
-    top: -46px;
-    left: 20px;
+  .desktop-social-media .desktop-google-maps{
+    float: center;
   }
-  .desktop-section-four .desktop-speach-four p{
-    line-height: 40px;
-    font-size: 25px;
-    word-wrap: break-word;
-  }
+
+
   /* Hiding mobile class starts here*/
   .mobile-wrapper{
     display: none;

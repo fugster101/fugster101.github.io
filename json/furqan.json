@@ -1,18 +1,26 @@
-//Custom Made local JSON data for my website incroperated in the about me section.
+/*
+Custom Made local JSON data for my website incroperated in the about me section
+used via AJAX json reverse request back to the GitHub repo of this project.
+*/
 {
-	"firstname": "Furqan",
-	"lastname": "Agwan",
-	"age": 21,
-	"University": "De Montfort University",
-	"Course": "Computer Science",
-	"Computer Languages": [
-		"Java",
-		"C",
-		"php",
-		"HTML",
-		"CSS",
-		"Javascript",
-		"JSON",
-		"Swift"
-	]
+  "firstname": "Furqan",
+  "lastname": "Agwan",
+  "age": 21,
+  "University": "De Montfort University",
+  "Course": "Computer Science",
+  "Computer Languages": [
+    "Java",
+    "C",
+    "php",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "JSON",
+    "Swift"
+  ]
 }
+/*
+use this URL when maaking a request to this file in raw format
+*/
+
+https://cdn.rawgit.com/fugster101/fugster101.github.io/master/json/furqan.json

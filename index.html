@@ -1,37 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type = "text/css" href = "css/index-style.css">
-  <link rel="shortcut icon" href="images/favicon/code-break/favicon.ico">
-  <script src="javascript/index-script.js"> </script>
-  <script src="https://use.fontawesome.com/bc67a8230c.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Furqan Agwan</title>
+  <title>Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type = "text/css" href = "css/index.css">
+  <link rel="stylesheet" type = "text/css" href = "css/animations.css">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <script src="https://use.fontawesome.com/2edaf8f04a.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
-  <video playsinline autoplay muted loop>
-    <source src="videos/Stockholm-Timelapse.mp4" type="video/mp4">
-    </video>
-    <div>
-      <img draggable="true" id="me" src="images/me-index.png" alt="Furqan Agwan" height="200" width="200" onclick="openNav()">
+  <div class="welcome-section content-hidden">
+    <div class="bracket-loader">
+      <span>{</span><span>}</span><br>
+      <a class="enter-button">Enter</a>
     </div>
-    <ul class="social-sticky">
-      <li><a id="facebook" href="https://www.facebook.com/furqan.kadri.1" target="_blank"><i class="fa fa-facebook fa-lg"  aria-hidden="true"></i></a></li>
-      <li><a id="twitter" href="https://twitter.com/FurqanKadri" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-      <li><a id="linkedin" href="https://www.linkedin.com/in/furqan-agwan/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-      <li><a id="github" href="https://github.com/fugster101?tab=repositories" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
-    </ul>
-    <div class="copyright-info">
-      <footer>
-        <small>&copy; Copyright 2017, Furqan Agwan</small>
+  </div>
+  <main>
+    <div class="mobile-wrapper">
+      <div class="mobile-nav">
+        <img id="furqan-icon" src="images/furqan-mobile-icon.png" alt="Furqan Agwan" height="65" width="65">
+        <nav id="mobile-nav" class="mobile-side-nav">
+          <a class="closebtn">&times;</a>
+          <a href="about.html">
+            <span class="ion-person"></span>
+            About
+          </a>
+          <a href="work.html">
+            <span class="ion-briefcase"></span>
+            Work
+          </a>
+        </nav>
+      </div>
+      <div class="mobile-datetime-section">
+        <div id="day">
+        </div>
+        <div id="date">
+        </div>
+        <div id="time">
+        </div>
+      </div>
+      <footer class="mobile-footer">
+        <div class="mobile-social-section">
+          <a href="https://www.facebook.com/furqan.kadri.1" target="_blank"><i class="ion-social-facebook"></i></a>
+          <a href="https://twitter.com/FurqanKadri?lang=en-gb" target="_blank"><i class="ion-social-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/furqan-agwan" target="_blank"><i class="ion-social-linkedin"></i></a>
+          <a href="https://github.com/fugster101" target="_blank"><i class="ion-social-github"></i></a>
+        </div>
       </footer>
     </div>
-    <div id="myNav" class="overlay">
-      <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <a id="about" href="about.html">About</a>
-        <a id="work" href="work.html">Work</a>
+
+    
+    <div class="desktop-wrapper">
+      <div class="desktop-landing-page">
+        <div class="desktop-landing-page-hero-section">
+          <h1>Furqan Agwan</h1>
+          <a href="about.html">About</a>
+          <a href="work.html">Work</a>
+        </div>
+        <div class="desktop-social-media-section">
+          <a href="https://www.facebook.com/furqan.kadri.1" target="_blank"><span class="fa fa-facebook fa-2x"></span></a>
+          <a href="https://twitter.com/FurqanKadri?lang=en-gb" target="_blank"><span class="fa fa-twitter fa-2x"></span></a>
+          <a href="https://www.linkedin.com/in/furqan-agwan" target="_blank"><span class="fa fa-linkedin fa-2x"></span></a>
+          <a href="https://github.com/fugster101" target="_blank"><span class="fa fa-github fa-2x"></span></a>
+        </div>
       </div>
     </div>
-  </body>
-  </html>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="JavaScript/index.js" ></script>
+  </main>
+</body>
+</html>

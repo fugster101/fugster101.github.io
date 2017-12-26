@@ -1,0 +1,290 @@
+/*
+This is the intro webpage of my website. All class and ID have been
+named to something meaningfull for the marker to understand. Making code
+much easer to read and understand.
+*/
+*, *:before , *:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+html{
+  background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1,#DC2326);
+  background-size: 400% 400%;
+  animation: desktopgradient 15s ease infinite;
+}
+body{
+  display: none;
+}
+.welcome-section {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.bracket-loader{
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Consolas, Menlo, Monaco, monospace;
+  color: white;
+  text-shadow: 1px 4px 1px rgba(0, 0, 0, .6);
+  font-weight: bold;
+  font-size: 15vh;
+  opacity: 0.8;
+}
+.bracket-loader a{
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  animation: fadeInDown 5s;
+  letter-spacing: -2px;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  font-weight: 800;
+}
+.bracket-loader a:visited{
+  color: white;
+}
+.bracket-loader span{
+  display: inline-block;
+  animation: pulse 0.4s alternate infinite ease-in-out;
+}
+.bracket-loader span:nth-child(odd){
+  animation-delay: 0.4s;
+}
+/*
+Wrapping mobile content allows for easy toggling between the
+website breakpoints. Just like this CSS is writern mobile first
+the HTML markup is also writtern mobile first in mind.
+
+Styles for the wrapper and all its content (TAGS - MARKUP) that house the mobile
+version of the site start here.
+*/
+.mobile-wrapper{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+/*
+The navigation styles for the mobile website start here
+*/
+.mobile-nav{
+  position: relative;
+  margin: 0;
+  width: 75%;
+  height: 100%;
+}
+.mobile-nav #furqan-icon{
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  margin: 0;
+  border-radius: 70%;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.mobile-side-nav{
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  letter-spacing: -2px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 15%;
+  transition: 0.5s;
+}
+.mobile-side-nav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 5%;
+  font-size: 50px;
+}
+.mobile-side-nav a{
+  text-decoration: none;
+  color: #333;
+}
+.mobile-side-nav a:nth-child(2),.mobile-side-nav a:nth-child(3){
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+/*
+Styles for the date and time section start here.
+These styles are predefined and rely on the XMLHTTP request
+that is defined in the index.js file, therfore these style will
+only be visble based on the result on the XMLHTTP JSON request.
+*/
+.mobile-datetime-section{
+  position: absolute;
+  top: 100px;
+  left: 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+}
+.mobile-datetime-section #day{
+  font-size: 40px;
+}
+.mobile-datetime-section #date{
+  font-size: 25px;
+}
+.mobile-datetime-section #time{
+  font-size: 25px;
+}
+.mobile-footer{
+  position: absolute;
+  width: 100%;
+  bottom:1%;
+}
+.mobile-social-section{
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+  text-align: center;
+}
+.mobile-social-section a{
+  display: inline-block;
+}
+.mobile-social-section a + a{
+  margin-left: 60px;
+}
+.mobile-social-section i{
+  font-size: 42px;
+  cursor: pointer;
+  color: white;
+}
+/*
+Toggle one style to not show desktop wrapper of the website
+*/
+.desktop-wrapper{
+  display: none;
+}
+/*
+Desktop specific Styles are located below. The only style
+that is shared between desktop and mobile view is the website preloader
+but the style of the preloader are diffrent for desktop and mobile
+allowing for a unique experice when the user visits my site from
+a diffrent device.
+*/
+@media (min-width:800px)  {
+  .welcome-section{
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: desktoppreloaderbackground 15s ease infinite;
+  }
+  .bracket-loader a{
+    cursor: pointer;
+  }
+  .desktop-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+   bottom: 0;
+    display: initial;
+  }
+  .desktop-landing-page{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    text-align: center;
+  }
+  .desktop-landing-page h1{
+    color: white;
+    font-weight: 800;
+    font-size: 4em;
+    letter-spacing: -2px;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  }
+  .desktop-landing-page-hero-section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .desktop-landing-page-hero-section a{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    background: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4em;
+    opacity: .8;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+    transition: all .5s ease;
+    margin: 0 auto;
+    display: inline-block;
+    width: 100px;
+  }
+  .desktop-landing-page-hero-section a:hover{
+    opacity: 1;
+  }
+  .desktop-landing-page-hero-section a + a{
+  margin-top: 50px;
+  margin-left: 60px;
+  }
+  .desktop-social-media-section{
+    position: absolute;
+    display: inline-block;
+    bottom: 10%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    text-decoration: none;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  }
+  .desktop-social-media-section span{
+  border: 1px solid;
+	border-radius: 50%;
+	color: #fff;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	padding-top: 15px;
+	margin: 10px;
+	transition: all .5s ease 0s;
+  cursor: pointer;
+  }
+  .desktop-social-media-section span:hover{
+  background: rgba(10, 10, 10, 0.1);
+	border-color: rgba(10, 10, 10, 0.1);
+  }
+
+  /*
+This section of CSS toggles the mobile wrapper that houses all
+mobile only content so only have to apply the display togle to one class.
+  */
+  .mobile-wrapper{
+    display: none;
+  }
+
+}

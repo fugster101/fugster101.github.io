@@ -1,0 +1,459 @@
+/* Default CCS rule is mobile first so no rule block needed,
+further designs are defined below for desktop expansion */
+*, *:before, *:after {
+  outline: none;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  overflow-y: visible;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+body{
+  display: none;
+}
+.mobile-wrapper{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.mobile-wrapper .mobile-top-color-bar{
+  position: relative;
+  z-index: auto;
+  height: 10px;
+  background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  animation: desktoppreloaderbackground 5s ease infinite;
+}
+.mobile-wrapper .mobile-hero-section{
+  position: relative;
+  margin: 0;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.mobile-wrapper .mobile-hero-section .mobile-back-prompt{
+  position: absolute;
+  display: initial;
+  margin: 0;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.mobile-wrapper .mobile-hero-section .mobile-back-prompt img{
+  transform: rotate(180deg);
+}
+.mobile-wrapper .mobile-hero-section .mobile-hero-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  z-index: 1;
+  font-size: 18vw;
+  letter-spacing: -2px;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
+  font-weight: 800;
+}
+
+.mobile-wrapper .mobile-hero-section .mobile-scroll-prompt{
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.mobile-wrapper .mobile-hero-section .mobile-scroll-prompt img{
+  cursor: pointer;
+  animation: pulseicon 2s infinite;
+}
+.mobile-wrapper .mobile-hero-section .mobile-hero-text{
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+}
+.mobile-wrapper .mobile-hero-section .mobile-hero-text h1 {
+  top: 50%;
+  left: 50%;
+  display: block;
+  font-weight: 100;
+  font-size: 15vw;
+  text-shadow: 1px 4px 1px rgba(0, 0, 0, .6);
+}
+.mobile-wrapper .mobile-hero-section .mobile-hero-text p{
+  letter-spacing: 5px;
+  font-size: 15px;
+  font-family: 'Sintony', sans-serif !important;
+  text-transform: uppercase;
+  color: #929292;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+}
+.mobile-wrapper .mobile-hero-section #mobile-top-button{
+  text-align: center;
+  height: 31px;
+  width: 31px;
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  animation: fadeInRight 1.5s;
+}
+.mobile-wrapper .mobile-hero-section #mobile-top-button img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
+.mobile-section-one{
+  margin:0;
+  z-index: 0;
+  height: 100%;
+  background-image: url("../images/new-york-mobile-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.mobile-section-one .card{
+  top: 40%;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.mobile-section-two{
+  margin:0;
+  z-index: 0;
+  height: 100%;
+  max-width: 100%;
+  background-image: url("../images/paris-mobile-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.mobile-section-two .card2{
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.mobile-section-two .card2 h1{
+  display: inline-block;
+}
+.mobile-section-three{
+  margin:0;
+  z-index: 0;
+  height: 100%;
+  max-width: 100%;
+  background-image: url("../images/toronto-mobile-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.mobile-section-three .card3{
+  top: 1%;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.mobile-section-three .card3 h1{
+  display: inline-block;
+}
+.mobile-section-four{
+  margin:0;
+  z-index: 0;
+  height: 100%;
+  max-width: 100%;
+  background-image: url("../images/australia-mobile-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.mobile-section-four .card4{
+  top: 1%;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.mobile-section-four .card4 h1{
+  display: inline-block;
+}
+.mobile-social-container{
+  max-width: 100%;
+  top:10%;
+  text-align: center;
+  position: relative;
+}
+.title{
+  color: white;
+  font-size: 18px;
+}
+.card img{
+  width: auto;
+  border-radius: 50%;
+}
+footer{
+  text-align: center;
+}
+.twitter-follow-button{
+  position: absolute;
+  display: initial;
+}
+/* Hiding desktop specific class starts here*/
+.desktop-wrapper{
+  display: none;
+}
+/*  (Expansion) Rule block for minimum screen sizes greater than 800px (Desktop)
+the following defined rule and styles will kick in*/
+@media (min-width: 768px){
+  *, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .desktop-wrapper{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: initial;
+  }
+  .desktop-hero-section{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .desktop-top-color-bar{
+    position: relative;
+    z-index: auto;
+    height: 10px;
+    background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: desktoppreloaderbackground 5s ease infinite;
+  }
+  .desktop-hero-text{
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  .desktop-hero-text h1{
+    top: 50%;
+    left: 50%;
+    display: block;
+    font-weight: 100;
+    font-size: 15vw;
+    text-shadow: 1px 4px 1px rgba(0, 0, 0, .6);
+  }
+  .desktop-hero-text p{
+    letter-spacing: 5px;
+    font-family: 'Sintony', sans-serif !important;
+    text-transform: uppercase;
+    color: #929292;
+  }
+  .desktop-scroll-prompt{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .desktop-scroll-prompt img{
+    cursor: pointer;
+    animation: pulseicon 2s infinite;
+  }
+  .desktop-section-one{
+    background-image: url("../images/new-york-mobile-bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .desktop-section-one .desktop-speach-one{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    color: black;
+    font-weight: bold;
+    border: 1px dashed white;
+    background: #fff;
+    box-shadow: -5px 3px 3px black;
+    text-align: left;
+    width: 80%;
+    height: 60%;
+    border-radius: 40px;
+    padding: 60px;
+    margin: 150px auto;
+  }
+  .desktop-section-one .desktop-speach-one:before {
+    position: absolute;
+    content: "";
+    border: 25px solid;
+    border-color: white transparent transparent white;
+    box-shadow: -5px 0px 0px 0px black;
+    bottom: -46px;
+    left: 20px;
+  }
+  .desktop-speach-one p{
+    position: relative;
+    line-height: 40px;
+    font-size: 25px;
+  }
+  .desktop-image-talking{
+    position: relative;
+    top: 83%;
+    left: 8%;
+    text-align: left;
+  }
+  .desktop-image-talking img{
+    box-shadow: -1px 1px 0px 0px black;
+    border-radius: 50%;
+  }
+  .desktop-section-two{
+    background-image: url("../images/toronto-mobile-bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .desktop-section-two .desktop-speach-two{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    color: black;
+    font-weight: bold;
+    border: 1px dashed white;
+    background: #fff;
+    box-shadow: 5px 3px 3px black;
+    text-align: left;
+    width: 80%;
+    height: 60%;
+    border-radius: 40px;
+    padding: 60px;
+    margin: 150px auto;
+  }
+  .desktop-section-two .desktop-speach-two:before{
+    position: absolute;
+    content: "";
+    border: 25px solid;
+    border-color: white white transparent transparent;
+    box-shadow: 5px 0px 0px 0px black;
+    bottom: -46px;
+    right: 20px;
+  }
+  .desktop-section-two .desktop-speach-two p{
+    line-height: 40px;
+    font-size: 25px;
+    word-wrap: break-word;
+  }
+
+  .desktop-section-two .desktop-image-talking-2 {
+    position: relative;
+    top: 83%;
+    right: 8%;
+    text-align: right;
+  }
+  .desktop-section-two .desktop-image-talking-2 img{
+    box-shadow: -1px 1px 0px 0px black;
+    border-radius: 50%;
+  }
+  .desktop-section-three{
+    background-image: url("../images/australia-mobile-bg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .desktop-section-three .desktop-speach-three{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    color: black;
+    font-weight: bold;
+    border: 1px dashed white;
+    background: #fff;
+    box-shadow: 5px 3px 3px black;
+    text-align: left;
+    width: 80%;
+    height: 60%;
+    border-radius: 40px;
+    padding: 60px;
+    margin: 150px auto;
+  }
+  .desktop-section-three .desktop-speach-three:before{
+    position: absolute;
+    content: "";
+    border: 25px solid;
+    border-color: transparent white white transparent;
+    box-shadow: 5px 0px 0px 0px black;
+    top: -46px;
+    right:20px;
+  }
+  .desktop-section-three .desktop-speach-three p{
+    line-height: 40px;
+    font-size: 25px;
+    word-wrap: break-word;
+  }
+  .desktop-social-media{
+    position: relative;
+    width: 100%;
+  }
+  .desktop-social-media .desktop-twitter{
+    float: left;
+  }
+  .desktop-social-media .desktop-google-maps{
+    float: center;
+  }
+
+
+  /* Hiding mobile class starts here*/
+  .mobile-wrapper{
+    display: none;
+  }
+}

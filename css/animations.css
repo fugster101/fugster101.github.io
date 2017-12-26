@@ -1,0 +1,80 @@
+/* Annimations are defined before hand here used both in mobile and desktop view of the
+webpage, they are also shared between this and the other pages*/
+/*
+index.html webpage animations
+*/
+@keyframes pulse {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+@keyframes pulseicon {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/*
+Fade in animation of mobile view
+*/
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+/*
+Fade enterButton animation
+*/
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeInRight{
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/*
+Pre Loders and back ground animations for Desktop
+One is defined for the preloder of the index page and the other
+is after has pressed the enter button
+*/
+@keyframes desktopgradient {
+    0% {
+      background-position: 0% 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0% 50%
+    }
+  }
+  @keyframes desktoppreloaderbackground {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}

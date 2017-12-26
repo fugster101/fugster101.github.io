@@ -1,65 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Work</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/work.css">
+  <link rel="stylesheet" type = "text/css" href = "css/animations.css">
+  <link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
-<link rel="stylesheet" type="text/css" href="css/work-style.css">
-<link rel="shortcut icon" href="images/favicon/code-break/favicon.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="javascript/work-script.js"> </script>
-<link href="https://cdn.rawgit.com/michalsnik/aos/836dbc05/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.rawgit.com/michalsnik/aos/836dbc05/dist/aos.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
-  <button onclick="tothetopfucntion()" id="topButton">Top</button>
-  <div class="hero-image">
-    <div class="hero-back">
-      <img  src="images/backbuttonwhite.png" alt="homebutton" height="30" width="30" onclick="backbutton()"></img>
+  <!--
+  Mobile HTML Markup all here. ID and Class names have symantic menaing.
+-->
+<div class="mobile-wrapper">
+  <div class="mobile-hero-section">
+    <div class="mobile-top-color-bar">
     </div>
-    <div class="hero-text">
-      <h1>Work</h1>
+    <div class="mobile-back-prompt">
+      <img id="backbutton-black-up" src="images/floating-mobile-chevron-black.png" alt="backbutton" height="25" width="25">
     </div>
-    <div class="hero-scroll-icon">
-      <i class="chevron-bottom">
-        Scroll Down
-      </i>
+    <div class="mobile-hero-text">
+      <h1 id="mobile-hero-maintext"> So... </h1>
+      <p id="mobile-hero-subtext">This page is about the places I have worked</p>
     </div>
-    <div class="hero-chevron">
-      <img class="chevron-icon"src="images/expand-arrow.png" alt="floating-chevron" height="20px"width="20px"></img>
+    <div class="mobile-scroll-prompt">
+      <img id="chevron-mobile-icon" src="images/floating-mobile-chevron-black.png" alt="chevron-mobile-icon" height="25" width="25">
+    </div>
+    <button id="mobile-top-button">
+      <img src="images/topicon.png" alt="topbutton" height="28" width="28" >
+    </button>
+  </div>
+  <!--
+  Mobile individual sections start here
+-->
+<section class="mobile-section-one" id="mobile-1">
+  <div class="card">
+    <img src="images/LCFC.png" alt="LCFC" height="150" width="150">
+    <p>Seach Steward <br>2017</p>
+  </div>
+</section>
+<section class="mobile-section-two">
+  <div class="card2">
+    <img src="" alt="Hastings Direct" height="100" width="100">
+    <p>Customer Repersentative <br>2016 - 2017</p>
+  </div>
+</section>
+<section class="mobile-section-three">
+  <div class="card3">
+    <img src="images/debenhams.png" alt="Debenhams" height="150" width="300">
+    <p> Sales Assistant <br>2014 - 2016</p>
+  </div>
+</section>
+<section class="mobile-section-four">
+  <div class="card4">
+    <img src="images/next.png" alt="Next" height="100" width="300">
+    <p>Sales Assistant <br>2014</p>
+  </div>
+</section>
+</div>
+
+<!--
+Desktop HTML Markup all here. ID and Class names have symantic menaing.
+Beacuse of parallax back feature desktop has its on markup but still mobile first visually
+-->
+<div class="desktop-wrapper">
+  <div class="desktop-hero-section">
+    <div class="desktop-top-color-bar">
+    </div>
+    <div class="desktop-back-prompt">
+    </div>
+    <div class="desktop-hero-text">
+      <h1 id="hero-maintext"> So... </h1>
+      <p id="hero-subtext">This page is about the places I have worked</p>
+    </div>
+    <div class="desktop-scroll-prompt">
+      <img id="chevron-desktop-icon" src="images/floating-mobile-chevron-black.png" alt="chevron-mobile-icon" height="50" width="50">
     </div>
   </div>
-  <nav class="desktop-nav">
-    <div class="wrapper">
-      <ul>
-        <div class="container-left">
-          <li><a id="jobs" href="#jobs">Jobs</a></li>
-        </div>
-        <div class="container-right">
-          <li><a id="contact" href="#contact">Contact</a></li>
-        </div>
-      </ul>
-    </div>
-  </nav>
-  <main class="jobs-mobile">
-    <section class="leicestercity-footballclub">
-      <h1 >Search Steward</h1>
-    </section>
-    <section class="hastingsdirect-insurance">
-      <h1>Customer Repersentative</h1>
-    </section>
-    <section class="debenhams-salesassistant">
-      <h1>Sales Assistant</h1>
-    </section>
-    <section class="getintouch">
-      <h1>Get in touch</h1>
-
-    </section>
-  </main>
-  <footer class="CV-Section">
-    <div>
-      <p> For a detailed version of my CV/Résumé please <a href="documents/FurqanSakirAgwan-CVWebsiteEddtion.docx" target="_blank">click here</a></p>
-    </div>
-  </footer>
-<script src="javascript/work-script.js"> </script>
+  <!--
+  Desktop individual sections start here
+-->
+<section class="desktop-section-one" id="desktop-section-one">
+  <div class="desktop-speach-one">
+    <img src="" alt="">
+    <p>
+      Seach Steward - Leicester City Football Club
+    </p>
+  </div>
+</section>
+<section class="desktop-section-two">
+  <div class="desktop-speach-two">
+    <p>
+      Customer Repersentative - Hastings Direct
+    </p>
+  </div>
+</section>
+<section class="desktop-section-three">
+  <div class="desktop-speach-three">
+    <p>
+      Sales Assistant - Debenhams
+    </p>
+  </div>
+</section>
+<section class="desktop-section-four">
+  <div class="desktop-speach-four">
+    <p>
+      Sales Assistant - Next
+    </p>
+  </div>
+</section>
+</div>
+<footer>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="JavaScript/work.js"></script>
 </body>
 </html>

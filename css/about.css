@@ -3,6 +3,7 @@ further designs are defined below for desktop expansion */
 *, *:before, *:after {
   outline: none;
   box-sizing: border-box;
+  box-shadow: none;
 }
 html,body{
   height: 100%;

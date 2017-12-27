@@ -116,7 +116,9 @@ body{
   cursor: pointer;
   padding: 5px;
   border-radius: 50%;
-  animation: fadeInRight 1.5s;
+  animation: fadeInRight 1.5s ,desktopgradient 5s infinite;
+  background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 200% 200%;
 }
 .mobile-wrapper .mobile-hero-section #mobile-top-button img{
   position: absolute;
@@ -146,11 +148,15 @@ body{
   text-align: center;
 }
 .mobile-section-one .card p{
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-  font-size: 7vw;
+  margin: 0;
+  font-family: 'Sintony', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-size: 3vh;
+  word-wrap: break-word;
   color: white;
-  text-shadow: 1px 1px 0 black;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
 }
 .mobile-section-two{
   margin:0;
@@ -173,10 +179,15 @@ body{
   text-align: center;
 }
 .mobile-section-two .card2 p{
-  font-family: "Roboto", sans-serif;
-  font-size: 7vw;
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: 'Sintony', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-size: 3vh;
+  word-wrap: break-word;
   color: white;
-  text-shadow: 1px 1px 0 black;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
 }
 .mobile-section-three{
   margin:0;
@@ -199,10 +210,15 @@ body{
   text-align: center;
 }
 .mobile-section-three .card3 p{
-  font-family: "Roboto", sans-serif;
-  font-size: 7vw;
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: 'Sintony', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-size: 3vh;
+  word-wrap: break-word;
   color: white;
-  text-shadow: 1px 1px 0 black;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
 }
 .mobile-section-four{
   margin:0;
@@ -225,10 +241,15 @@ body{
   text-align: center;
 }
 .mobile-section-four .card4 p{
-  font-family: "Roboto", sans-serif;
-  font-size: 7vw;
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: 'Sintony', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 3vw;
+  font-size: 3vh;
+  word-wrap: break-word;
   color: white;
-  text-shadow: 1px 1px 0 black;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
 }
 .mobile-social-container{
   max-width: 100%;
@@ -260,7 +281,6 @@ body{
 }
 .mobile-only-footer p{
   margin: 0;
-
 }
 .mobile-only-footer p a{
   text-decoration: none;
@@ -293,6 +313,25 @@ the following defined rule and styles will kick in*/
     height: 100%;
     width: 100%;
     display: initial;
+  }
+  .desktop-wrapper ul{
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-family: 'Sintony', sans-serif !important;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-size: 2vh;
+    word-wrap: break-word;
+  }
+  .desktop-wrapper h2{
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-family: 'Sintony', sans-serif !important;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-size: 2vh;
+    word-wrap: break-word;
+    text-decoration: underline;
   }
   .desktop-hero-section{
     position: relative;
@@ -377,9 +416,12 @@ the following defined rule and styles will kick in*/
     bottom: -46px;
     left: 20px;
   }
-  .desktop-speach-one p{
-    line-height: 40px;
-    font-size: 25px;
+  .desktop-speach-one p {
+    letter-spacing: 2px;
+    font-family: 'Sintony', sans-serif !important;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-size: 2vh;
     word-wrap: break-word;
   }
   .desktop-speach-one p img{
@@ -430,8 +472,11 @@ the following defined rule and styles will kick in*/
     right: 20px;
   }
   .desktop-section-two .desktop-speach-two p{
-    line-height: 40px;
-    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Sintony', sans-serif !important;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-size: 2vh;
     word-wrap: break-word;
   }
 
@@ -480,8 +525,11 @@ the following defined rule and styles will kick in*/
     right:20px;
   }
   .desktop-section-three .desktop-speach-three p{
-    line-height: 40px;
-    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Sintony', sans-serif !important;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-size: 2vh;
     word-wrap: break-word;
   }
   .desktop-section-four{
@@ -519,8 +567,11 @@ the following defined rule and styles will kick in*/
     left: 20px;
   }
   .desktop-section-four .desktop-speach-four p{
-    line-height: 40px;
-    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Sintony', sans-serif !important;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-size: 2vh;
     word-wrap: break-word;
   }
   /* Hiding mobile class starts here*/

@@ -6,22 +6,22 @@
   http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://fugster101.github.io/</loc>
-    <lastmod>2017-12-12T21:58:30+00:00</lastmod>
+    <lastmod>2017-12-27T14:40:41+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://fugster101.github.io/about.html</loc>
-    <lastmod>2017-12-12T21:58:30+00:00</lastmod>
+    <lastmod>2017-12-27T14:40:41+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://fugster101.github.io/work.html</loc>
-    <lastmod>2017-12-12T21:58:30+00:00</lastmod>
+    <lastmod>2017-12-27T14:40:41+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://fugster101.github.io/documents/FurqanSakirAgwan-CVWebsiteEddtion.docx</loc>
-    <lastmod>2017-12-12T21:58:30+00:00</lastmod>
+    <loc>https://fugster101.github.io/documents/furqanagwan.docx</loc>
+    <lastmod>2017-12-27T14:40:41+00:00</lastmod>
     <priority>0.64</priority>
   </url>
 </urlset>

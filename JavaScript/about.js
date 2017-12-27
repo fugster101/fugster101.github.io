@@ -5,8 +5,6 @@ window.addEventListener('load', function() {
   window.addEventListener('scroll', scrollFunction, true);
   colorLanguages();
 
-
-console.log(data);
 });
 /*
 Custom Made local JSON data for my website incroperated in the about me section
@@ -28,22 +26,27 @@ Could have used the data object to inject code
 into HTML directly but syntactically its incorrect
 docuumnet.getElementById.innerHTMl = data.ComputerLanguages[0..7];
 */
- let data = {
-  "firstname": "Furqan",
-  "lastname": "Agwan",
-  "age": 21,
-  "University": "De Montfort University",
-  "Course": "Computer Science",
-  "ComputerLanguages": [
-    "Java",
-    "C",
-    "php",
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "JSON",
-    "Swift"
-  ]
+
+function dataFill() {
+  let data = {
+   "firstname": "Furqan",
+   "lastname": "Agwan",
+   "age": 21,
+   "University": "De Montfort University",
+   "Course": "Computer Science",
+   "ComputerLanguages": [
+     "Java",
+     "C",
+     "php",
+     "HTML",
+     "CSS",
+     "JavaScript",
+     "JSON",
+     "Swift"
+   ]
+ }
+  let firstname = String(data.firstname);
+  let lastname = String(data.lastname);
 }
 function backbutton(){
   window.history.back();

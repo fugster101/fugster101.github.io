@@ -63,7 +63,6 @@ body{
   text-shadow: 1px 2px 1px rgba(0, 0, 0, .6);
   font-weight: 800;
 }
-
 .mobile-wrapper .mobile-hero-section .mobile-scroll-prompt{
   position: absolute;
   top: 95%;
@@ -116,7 +115,9 @@ body{
   cursor: pointer;
   padding: 5px;
   border-radius: 50%;
-  animation: fadeInRight 1.5s;
+  animation: fadeInRight 1.5s, desktopgradient 5s infinite;
+  background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 200% 200%;
 }
 .mobile-wrapper .mobile-hero-section #mobile-top-button img{
   position: absolute;
@@ -143,6 +144,9 @@ body{
   position: relative;
   text-align: center;
   color: white;
+  font-family: 'Sintony', sans-serif !important;
+  text-transform: uppercase;
+
 }
 .mobile-section-two{
   margin:0;
@@ -161,6 +165,8 @@ body{
   position: relative;
   text-align: center;
   color: white;
+  font-family: 'Sintony', sans-serif !important;
+  text-transform: uppercase;
 }
 .mobile-section-two .card2 h1{
   display: inline-block;
@@ -183,6 +189,8 @@ body{
   position: relative;
   text-align: center;
   color: white;
+  font-family: 'Sintony', sans-serif !important;
+  text-transform: uppercase;
 }
 .mobile-section-three .card3 h1{
   display: inline-block;
@@ -205,6 +213,8 @@ body{
   position: relative;
   text-align: center;
   color: white;
+  font-family: 'Sintony', sans-serif !important;
+  text-transform: uppercase;
 }
 .mobile-section-four .card4 h1{
   display: inline-block;
@@ -339,8 +349,17 @@ the following defined rule and styles will kick in*/
   }
   .desktop-speach-one p{
     position: relative;
-    line-height: 40px;
-    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Sintony', sans-serif !important;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-size: 2vh;
+  }
+  .desktop-speach-one-content{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   .desktop-image-talking{
     position: relative;
@@ -387,8 +406,12 @@ the following defined rule and styles will kick in*/
     right: 20px;
   }
   .desktop-section-two .desktop-speach-two p{
-    line-height: 40px;
-    font-size: 25px;
+    position: relative;
+    letter-spacing: 2px;
+    font-family: 'Sintony', sans-serif !important;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-size: 2vh;
     word-wrap: break-word;
   }
 
@@ -413,16 +436,14 @@ the following defined rule and styles will kick in*/
   }
   .desktop-section-three .desktop-speach-three{
     position: absolute;
-    left: 20px;
-    right: 20px;
+    left: 10px;
+    right: 10px;
     color: black;
     font-weight: bold;
     border: 1px dashed white;
     background: #fff;
     box-shadow: 5px 3px 3px black;
-    text-align: left;
-    width: 80%;
-    height: 60%;
+    width: 85%;
     border-radius: 40px;
     padding: 60px;
     margin: 150px auto;
@@ -433,23 +454,31 @@ the following defined rule and styles will kick in*/
     border: 25px solid;
     border-color: transparent white white transparent;
     box-shadow: 5px 0px 0px 0px black;
-    top: -46px;
-    right:20px;
+    top: -42px;
+    right: 15px;
+    z-index: 1;
   }
   .desktop-section-three .desktop-speach-three p{
-    line-height: 40px;
-    font-size: 25px;
+    position: relative;
+    letter-spacing: 2px;
+    font-family: 'Sintony', sans-serif !important;
+    text-transform: uppercase;
+    font-size: 2vw;
+    font-size: 2vh;
     word-wrap: break-word;
   }
   .desktop-social-media{
     position: relative;
     width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px;
   }
   .desktop-social-media .desktop-twitter{
-    float: left;
+float: left;
   }
   .desktop-social-media .desktop-google-maps{
-    float: center;
+float: right;
   }
 
 

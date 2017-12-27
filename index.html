@@ -11,13 +11,25 @@
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
+  <!--
+  Wesbite Loder runs in both desktop and mobile version of the site.
+  There are two classe in one for when the page loades and one to run via jquery when enter button
+  is pressed which is content-hidded. The fade out animation is doen via Jquery.
+-->
   <div class="welcome-section content-hidden">
     <div class="bracket-loader">
       <span>{</span><span>}</span><br>
       <a class="enter-button">Enter</a>
     </div>
   </div>
+  <!--
+  Repersents the main contents of the webpage, thus being the desktop and mobile content.
+  The pre loader is not consider contenet due to it showing a lack of informative information.
+  -->
   <main>
+    <!--
+    Mark up for mobile version of site
+  -->
     <div class="mobile-wrapper">
       <div class="mobile-nav">
         <img id="furqan-icon" src="images/furqan-mobile-icon.png" alt="Furqan Agwan" height="65" width="65">
@@ -33,6 +45,10 @@
           </a>
         </nav>
       </div>
+      <!--
+      Using TIMEZONEAPI and JavaScript to dynamical populate the date. Since the loder take some time to load
+      in the JSON data and request are not noticable by the user. However that depends on server repsonse.
+    -->
       <div class="mobile-datetime-section">
         <div id="day">
         </div>
@@ -41,6 +57,12 @@
         <div id="time">
         </div>
       </div>
+
+      <!--
+      Mobile first approach so use the footer tag in the mobile section. Since only one instance of footer tag can be preset
+      I have decided to use it here as symatically this would be the correct place to put it. This page validate and so this is perfectly
+      acceptable to use. I am using icon ion for the social media icons dispayed here
+    -->
       <footer class="mobile-footer">
         <div class="mobile-social-section">
           <a href="https://www.facebook.com/furqan.kadri.1" target="_blank"><i class="ion-social-facebook"></i></a>
@@ -51,7 +73,12 @@
       </footer>
     </div>
 
-    
+    <!--
+    Markup for desktop version of the site. The use of font awsome is existant here as you can see by the "fa" abbrvation
+    used on class names. This has to be used as specified by dont awsome, this is because in thier CSS file they have thier class
+    styles for each icon specified like that.
+  -->
+
     <div class="desktop-wrapper">
       <div class="desktop-landing-page">
         <div class="desktop-landing-page-hero-section">
@@ -65,6 +92,7 @@
           <a href="https://www.linkedin.com/in/furqan-agwan" target="_blank"><span class="fa fa-linkedin fa-2x"></span></a>
           <a href="https://github.com/fugster101" target="_blank"><span class="fa fa-github fa-2x"></span></a>
         </div>
+        <a id="sitemap" href="https://www.xml-sitemaps.com/download/fugster101.github.io-797845ad/sitemap.html?view=1" target="_blank" >Sitemap</a>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

@@ -42,7 +42,7 @@ function closeNavigation() {
   document.getElementById('mobile-nav').style.width = "0";
 }
 $(function(){
-  $('body').fadeIn(250);
+  $('body').fadeIn(150);
   let welcomSection = $('.welcome-section');
   let enterButton = welcomSection.find('.enter-button');
   let mobilesection = $('.mobile-wrapper');

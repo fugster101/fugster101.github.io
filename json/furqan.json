@@ -20,7 +20,9 @@ used via AJAX json reverse request back to the GitHub repo of this project.
   ]
 }
 /*
-use this URL when maaking a request to this file in raw format
+ReverseAPI call
+use this URL when maaking a request to this file in raw format,
+may be a problem on private directories and/or chrome security feature may block this request.
 */
 
-https://cdn.rawgit.com/fugster101/fugster101.github.io/master/json/furqan.json
+https://cdn.rawgit.com/fugster101/fugster101.github.io/master/JSON/furqan.json

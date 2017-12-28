@@ -9,6 +9,8 @@ index.html webpage animations
     opacity: 0.5;
   }
 }
+
+/*Animation for cheveron pulsing up and down located on about and work page*/
 @keyframes pulseicon {
   0% {
     transform: translate(0, 0);
@@ -29,7 +31,7 @@ Fade in animation of mobile view
   to   { opacity: 1; }
 }
 /*
-Fade enterButton animation
+Fade in down animation for the eneter button located on the preloder of the index page.
 */
 @keyframes fadeInDown {
   from {
@@ -41,6 +43,7 @@ Fade enterButton animation
     transform: none;
   }
 }
+
 @keyframes fadeInRight{
   from {
     opacity: 0;
@@ -67,6 +70,7 @@ is after has pressed the enter button
       background-position: 0% 50%
     }
   }
+  /* Animation for sektop gradient color chnager of the pre loader of the website*/
   @keyframes desktoppreloaderbackground {
 	0% {
 		background-position: 0% 50%

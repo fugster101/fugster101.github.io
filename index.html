@@ -16,10 +16,10 @@
   There are two classe in one for when the page loades and one to run via jquery when enter button
   is pressed which is content-hidded. The fade out animation is doen via Jquery.
 -->
-  <div class="welcome-section content-hidden">
-    <div class="bracket-loader">
+  <div class="welcome-section content-hidden" id="welcomsection">
+    <div class="bracket-loader" id="loader">
       <span>{</span><span>}</span><br>
-      <a class="enter-button">Enter</a>
+      <a id="enterButton" class="enter-button">Enter</a>
     </div>
   </div>
   <!--
@@ -30,7 +30,7 @@
     <!--
     Mark up for mobile version of site
   -->
-    <div class="mobile-wrapper">
+    <div class="mobile-wrapper" id="mobile-wrap">
       <div class="mobile-nav">
         <img id="furqan-icon" src="images/furqan-mobile-icon.png" alt="Furqan Agwan" height="65" width="65">
         <nav id="mobile-nav" class="mobile-side-nav">
@@ -57,12 +57,14 @@
         <div id="time">
         </div>
       </div>
-
       <!--
       Mobile first approach so use the footer tag in the mobile section. Since only one instance of footer tag can be preset
       I have decided to use it here as symatically this would be the correct place to put it. This page validate and so this is perfectly
       acceptable to use. I am using icon ion for the social media icons dispayed here
     -->
+    <div class="mobile-quote-section">
+
+    </div>
       <footer class="mobile-footer">
         <div class="mobile-social-section">
           <a href="https://www.facebook.com/furqan.kadri.1" target="_blank"><i class="ion-social-facebook"></i></a>
@@ -92,10 +94,13 @@
           <a href="https://www.linkedin.com/in/furqan-agwan" target="_blank"><span class="fa fa-linkedin fa-2x"></span></a>
           <a href="https://github.com/fugster101" target="_blank"><span class="fa fa-github fa-2x"></span></a>
         </div>
-        <a id="sitemap" href="https://www.xml-sitemaps.com/download/fugster101.github.io-797845ad/sitemap.html?view=1" target="_blank" >Sitemap</a>
+        <div class="desktop-validation-section">
+          <a id="sitemap" href="https://www.xml-sitemaps.com/download/fugster101.github.io-797845ad/sitemap.html?view=1" target="_blank" >Sitemap</a>
+          <a id="cssVal" href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank" >CSS</a>
+          <a id="htmlVal" href="http://validator.w3.org/check?uri=referer" target="_blank" >HTML</a>
+        </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="JavaScript/index.js" ></script>
   </main>
 </body>

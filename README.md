@@ -5,19 +5,15 @@ This website will be updated and maintain by self as soon as new information abo
 This Website is also optimized well for mobile users. The aim was to keep the website simple as it is not a big project, or requires any server-side interaction. The information below shows all the API's, references and technologies used to create this website. Information regarding challenges and Website thought and design process.
 
 I have spent many hours on this website as can be seen by my entire commit history. I still fell I can improve further however that requires time to learn more about designing and providing functionality to a website.
-Going forward I would learn more jquery as it cross browser support is great with the stuff you can do with it.
+I have a solid fundamental understanding of JavaScript, going forward the use of jQuery should be the preferred framework when designing websites, this is because its lightweight and you can archive the same functionality with less code resulting in faster loading times for pages.
 ## Assessment
 Links to this GitHub pages website and the project repository are below. A txt file has also be added to the project file structure which includes student information such as p-number and name (Assessment Purposes).  
 
-
 [Website](https://fugster101.github.io/)
-
 
 [Repository](https://github.com/fugster101/fugster101.github.io)
 
-
 A link to all my other projects is displayed below
-
 
 [Account](https://github.com/fugster101?tab=repositories)
 
@@ -29,11 +25,9 @@ The following sketch shows the tree structure of this website. This outlines the
 ## Initial Design
 The following sketches reflect the initial design of my website, however they were subject to change. As this has used a mobile first approach I have focused more on the mobile design rather than the desktop design. I have also mentioned the file names that will be used in the project. I have named all the files in this project to something appropriate and meaningful.
 
-
 ### Mobile Design
 **Note: This is not the final design of the mobile website just a UI mock. If images are not viewable here please look in the GitHubimages folder for direct access to the image files**
 ![Mobile Website1](GitHubimages/webpageMobile-1.png)
-
 
 ![Mobile Website2](GitHubimages/webpageMobile-2.png)
 ### Desktop Design
@@ -89,38 +83,36 @@ The following section shows the XML markup of my website. The XML is particular 
 # Cross-Compatibility
 Due to the nature of the Assessment cross-Compatibility was not part of the making criteria and was told not to worry about it. Although future implementations of the website will accommodate for other browsers except for internet explorer. This is just a matter of adding web kit prefixes on animation and styles.
 
-I have been a big fan of chromes inspect tool in the development of this website due to chrome support for certain css styles and animations.
+I have been a big fan of chromes inspect tool in the development of this website due to chrome support of toggling certain CSS styles and animations.
 # User Testing
 I have personally testes this website many time using chrome and safari on my iPhone.
 
 # Additional Notes
 ## For the Marker
-Please make sure the browser is chrome with the latest update for Compatibility reason chrome works bests and this website was designed and tested using chrome and its inspector feature to point out any errors and element position's and their respective styles.
+Please make sure the browser is chrome with the latest update for compatibility reason chrome works bests and this website was designed and tested using chrome and its inspector feature to point out any errors and element position's and their respective styles.
 
 I have tried to remove redundant code and resources to keep webpage request time from GitHub servers as fast as possible. I have also resized all images to 1080p and nothing more as I felt that would have been an optimal image size and is not too resources intensive.
 
-External files provided on a CDN have to contribute to the loading speed of the website. I am pulling various CSS and JavaScript files from 3rd party libraries hosted on GitHub such as Animate on Scoll (AOS) and Fontawesome. Information regarding these 3rd party libraries are in the references section.
+External files provided on a CDN have to contribute to the loading speed of the website. I am pulling various CSS files from 3rd party sources hosted on GitHub such as Fontawesome. Information regarding these 3rd party libraries are in the references section.
 
 For the most part of working on this website most of the commits have been pushed to the master branch and so live website was also update, but more recently I have created a new branch to push commits to. The new branch "websitetestbranch" contains all the same code and markdown but acts as a testing project and so when I feel I have made major changes I will merge the branch back to the master branch.
 
 All multimedia and images used in this website were provided by Unsplash and all authors have released their images under the Creative Commons (CC0) license. Future improvements to this site will use Unspalsh API and/or
 use the Unsplash embed website, that can randomly generate new images upon every request.
 
-The design thought and process regarding this website was simple. The idea was to create a simple CV website that showcased the normal things you would expect to see on a regular CV. This includes interest and hobbies, technologies I am interested in etc. The website does contain a downloadable CV that user can download if they wish to , however the document is password protected and so editing and copying on the document is not possible.
-
-I am not using any CSS library for responsive design such as bootstrap, all code in this website has been written by myself and exploring the stack overflow community for any problems I came across.
-
-I am pulling in and using jQuery, but please don't take the code into consideration when marking the websites JavaScript I have used plenty vanilla JavaScript in the website. The jquery is only used for its fadeIn and fadeOut function and also the srollto functionality, this was down because jQuery offers more while writing less.
+The design thought and process regarding this website was simple. The idea was to create a simple CV website that showcased the normal things you would expect to see on a regular CV. This includes interest and hobbies, technologies I am interested in etc. The website does contain a downloadable CV that user can download if they wish to , however the document is password protected and so editing and copying on the document is not possible and is only available on the mobile version of the work.html page.
 
 I have designed the markup in way for the mobile version and desktop version of the site to be different
 are similar I could have just made the desktop version of this site a blown up version of the mobile site, but I did not want to that as it did not look aesthetically good, however I have kept the styles and overall information organization of the site the same.
+
+The script technologies used to create this website are vanilla/pure JavaScript and External JavaScript libraries. I have used XML WEB API and the new Fetch API Request to get server stored JSON data.
+Using these technologies has provided me a sound understanding of how to use JavaScript 3rd party libraries and the native JavaScript language to manipulate the DOM.
 
 Feel free to download any files located on the repository if you wish to keep them locally.
 
 ## Validation and Verification
 
-All webpage pass the W3C CSS and HTML validator, there are some minor warnings when some of the HTML pages are validated. The warnings in no way effect the webpages rather they are suggestions provided by W3C.
-Some suggestion include the use of h1-h6 tags and such
+In my website I have included direct links to the validation tools for checking the pages of my website. I have already checked weather my website passes validation both in HTML and CSS.
 
 ## *References*
 (2017) W3Schools Online Web Tutorials. [Online] Available from: [](https://www.w3schools.com/) [Accessed 1/11/2017]

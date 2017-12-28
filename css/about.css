@@ -1,3 +1,5 @@
+/*Google Fonts Import*/
+@import url('https://fonts.googleapis.com/css?family=Roboto|Sintony');
 /* Default CCS rule is mobile first so no rule block needed,
 further designs are defined below for desktop expansion */
 *, *:before, *:after {

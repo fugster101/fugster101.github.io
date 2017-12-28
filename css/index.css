@@ -1,3 +1,5 @@
+/*Google Fonts Import*/
+@import url('https://fonts.googleapis.com/css?family=Roboto|Sintony');
 /*
 This is the intro webpage of my website. All class and ID have been
 named to something meaningfull for the marker to understand. Making code
@@ -155,14 +157,14 @@ only be visble based on the result on the XMLHTTP JSON request.
 }
 .mobile-quote-section{
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 15px;
+  top: 52%;
+  width: 100%;
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
-  color: white;
+  text-align: left;
 }
 .mobile-footer{
   position: absolute;

@@ -109,9 +109,25 @@ Due to the nature of the Assessment cross-Compatibility was not part of the maki
 
 I have been a big fan of chromes inspect tool in the development of this website due to chrome support of toggling certain CSS styles and animations.
 # User Testing
-I have personally tested the live website on my iPhone X and support has been great all JavaScript functionality is working and all text and images scale to fit the device width. All API request also work great although there some delay in it appearing which is down to the response time received from the server. All google fonts showed correctly and with the right styles.
+I have personally tested the live website on my iPhone X and support has been great all JavaScript functionality is working and all text and images scale to fit the device width. All API request also work great although there some delay in it appearing which is down to the response time received from the server. All google fonts showed correctly and with the right styles. I did notice one problem, on the index page the iPhone does not seem to recognize the "overflow- y: none" property, keeping in mind I was using Safari as the default browser. Since chrome has better support it would be better to use the google chrome app from Apples App Store.
 
-I also got one of my friends to test my website on their phone. My friends phone was and Android (Samsun Galaxy S7 Edge) and while all the functionality worked due to the curved edge screen, the  back "to the top" button look out of position, he also mentioned that some google fonts were not showing. Since this worked on my iPhone this may be a feature that Samsung's OS has disable custom font imports.
+I also got one of my friends to test my website on their phone. My friends phone was and Android (Samsung Galaxy S7 Edge) and while all the functionality worked due to the curved edge screen, the  back "to the top" button look out of position, he also mentioned that some google fonts were not showing. Since this worked on my iPhone this may be a feature that Samsung's OS has disable custom font imports. This was tested on google chrome on android.
+
+I then had my mum test out the website on her android phone (1+2) phone using chrome as the browser once again and all fonts and functionality worked accordingly. I also got my mum to test out the desktop version of the site and since she does not have much knowledge regarding how to use computers and website she was able to navigate through the website easily claiming the text was very easy to read and understand and so she could easily click on the page she wanted to navigate to. Accesability like bright colors and large images on the about page and work pages, made it easy for her to read all the content included on the webpage.
+
+Unfortunately no-body wanted their picture taken so I was unable to get images of them :grin: . However I did get some live screenshots of my websites of the website on mine, my mums and my friends phone. Screenshots are of first page that is index page.
+
+### iPhone X
+
+![iPhone X Index Page](GitHubimages/iphoneMobile.jpg)
+
+### Samsung Galaxy S7 Edge
+
+![Samsung S7 Edge Index Page](GitHubimages/samsungMobile.png)
+
+### One Plus (1+2)
+
+![One Plus Index Page](GitHubimages/oneplusMobile.png)
 
 # Additional Notes
 ## For the Marker
@@ -141,28 +157,29 @@ Feel free to download any files located on the repository if you wish to keep th
 ## Validation and Verification
 
 In my website I have included direct links to the validation tools for checking the pages of my website when it come to marking.
-I have personally checked weather my website passes validation both in HTML and CSS.
+I have personally checked weather my website passes validation both in HTML and CSS. I do receive some warnings regarding the usage of <h1 - h6> tags.
+however I was told that warnings are acceptable only errors need to be fixed.
 
 ## *References*
 
-(2017) JavaScript Tutorial. [Online] Available from: [https://www.sololearn.com/Course/JavaScript/] [Accessed 23/10/2017]
+(2017) JavaScript Tutorial. [Online] Available from: https://www.sololearn.com/Course/JavaScript/ [Accessed 23/10/2017]
 
-(2017) Stack Overflow - Where Developers Learn, Share, & Build Careers. [Online] Available from: [https://stackoverflow.com/] [Accessed 28/10/2017]
+(2017) Stack Overflow - Where Developers Learn, Share, & Build Careers. [Online] Available from: https://stackoverflow.com/ [Accessed 28/10/2017]
 
-(2017) W3Schools Online Web Tutorials. [Online] Available from: [https://www.w3schools.com/] [Accessed 1/11/2017]
+(2017) W3Schools Online Web Tutorials. [Online] Available from: https://www.w3schools.com/ [Accessed 1/11/2017]
 
-(2017) CSS-Tricks. [Online] Available from: [https://css-tricks.com/] [Accessed 1/11/2017]
+(2017) CSS-Tricks. [Online] Available from: https://css-tricks.com/ [Accessed 1/11/2017]
 
-(2017) Create your Google Sitemap Online - XML Sitemaps Generator. [Online] Available from: [https://www.xml-sitemaps.com/] [Accessed 2/11/2017]
+(2017) Create your Google Sitemap Online - XML Sitemaps Generator. [Online] Available from: https://www.xml-sitemaps.com/ [Accessed 2/11/2017]
 
-Walsh, D. (2017). David Walsh Blog. [Online] David Walsh Blog. Available from: [https://davidwalsh.name/] [Accessed 4//11/2017]
+Walsh, D. (2017). David Walsh Blog. [Online] David Walsh Blog. Available from: https://davidwalsh.name/ [Accessed 4//11/2017]
 
-LePage, P. (2017). Responsive Web Design Basics  |  Web Fundamentals  |  Google Developers. [Online] Google Developers. Available from: [https://developers.google.com/web/fundamentals/design-and-ux/responsive/] [Accessed 10/11/2017]
+LePage, P. (2017). Responsive Web Design Basics  |  Web Fundamentals  |  Google Developers. [Online] Google Developers. Available from: https://developers.google.com/web/fundamentals/design-and-ux/responsive/ [Accessed 10/11/2017]
 
-LePage, P. (2017). Responsive Web Design Patterns  |  Web Fundamentals  |  Google Developers. [Online] Google Developers. Available from: [https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns] [Accessed 13/11/2017]
+LePage, P. (2017). Responsive Web Design Patterns  |  Web Fundamentals  |  Google Developers. [Online] Google Developers. Available from: https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns [Accessed 13/11/2017]
 
-Gandy, D. (2017). Font Awesome, the iconic font and CSS toolkit. [Online] Fontawesome.io. Available from: [http://fontawesome.io/] [Accessed 15/11/2017]
+Gandy, D. (2017). Font Awesome, the iconic font and CSS toolkit. [Online] Fontawesome.io. Available from: http://fontawesome.io/ [Accessed 15/11/2017]
 
-(2017). Ionicons: The premium icon font for Ionic Framework. [Online] Available from: [http://ionicons.com/] [Accessed 15/11/2017]
+(2017). Ionicons: The premium icon font for Ionic Framework. [Online] Available from: http://ionicons.com/ [Accessed 15/11/2017]
 
-(2017) Tippy.js - Vanilla JS Tooltip Library. [Online] Available from: [https://atomiks.github.io/tippyjs/] [Accessed 29/12/2017]
+(2017) Tippy.js - Vanilla JS Tooltip Library. [Online] Available from: https://atomiks.github.io/tippyjs/ [Accessed 29/12/2017]

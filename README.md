@@ -38,6 +38,23 @@ As you can see form the initial sketches of the website my website has changed q
 While a website can be minimalistic it can contain a lot of code and functionality. The mobile version of the index page was app based inspired and the desktop version is much more simplistic in mind.
 Consistency was also important therefore you can see both the mobile version of the about and work follow the same idea of having a scrolling card based UI. The desktop version of these sites follow a speech
 based UI as it brought a more personal touch to my website.
+
+### Desktop Version
+
+![Desktop Index Page](GitHubimages/desktopIndex.png)
+
+![Desktop About Page](GitHubimages/desktopAbout.png)
+
+![Desktop Work Page](GitHubimages/desktopWork.png)
+
+### Mobile Version
+
+![Mobile Index Page](GitHubimages/mobileIndex.png)
+
+![Mobile About Page](GitHubimages/mobileAbout.png)
+
+![Mobile Work Page](GitHubimages/mobileWork.png)
+
 # Responsive Web Design
 As part of my assessment responsive design was an essential marking criteria for the website. The website was design mobile first in mind making transition to the desktop version of website was smooth and easy. Responsive design also includes responsive images, multimedia and responsive text making sure they fit any browser.
 ## Mobile First
@@ -89,16 +106,14 @@ I have personally testes this website many time using chrome and safari on my iP
 
 # Additional Notes
 ## For the Marker
-Please make sure the browser is chrome with the latest update for compatibility reason chrome works bests and this website was designed and tested using chrome and its inspector feature to point out any errors and element position's and their respective styles.
+Please make sure the browser is chrome with the latest update for compatibility reason chrome works best and this website was designed and tested using chrome and its inspector feature to point out any errors and toggle element position's and their respective styles.
 
-I have tried to remove redundant code and resources to keep webpage request time from GitHub servers as fast as possible. I have also resized all images to 1080p and nothing more as I felt that would have been an optimal image size and is not too resources intensive.
+I have tried to remove redundant code and resources to keep webpage request time from GitHub servers as fast as possible. I have also resized all images to 1080p and nothing more as I felt that would have been an optimal image size and is not too resources intensive. In order to make the request faster a minified file for all my CSS and JavaScript can be provided, or using a beautifier.
 
-External files provided on a CDN have to contribute to the loading speed of the website. I am pulling various CSS files from 3rd party sources hosted on GitHub such as Fontawesome. Information regarding these 3rd party libraries are in the references section.
-
-For the most part of working on this website most of the commits have been pushed to the master branch and so live website was also update, but more recently I have created a new branch to push commits to. The new branch "websitetestbranch" contains all the same code and markdown but acts as a testing project and so when I feel I have made major changes I will merge the branch back to the master branch.
+For the most part of working on this website most of the commits have been pushed to the master branch and so live website was also update, but more recently I have created a new branch to push commits to. The new branch "websitetestbranch" contains all the same code and markdown but acts as a testing project and so when I feel I have made major changes. If you can see my commits history I have now merged the testing branch and master branch back together but have still kept the testing branch still active. This was done for experimenting with technologies features and such.
 
 All multimedia and images used in this website were provided by Unsplash and all authors have released their images under the Creative Commons (CC0) license. Future improvements to this site will use Unspalsh API and/or
-use the Unsplash embed website, that can randomly generate new images upon every request.
+use the Unsplash embed website, that can randomly generate new images upon every request. I have now obtained a Unsplash API license by which going forward I am hoping to make use of it.
 
 The design thought and process regarding this website was simple. The idea was to create a simple CV website that showcased the normal things you would expect to see on a regular CV. This includes interest and hobbies, technologies I am interested in etc. The website does contain a downloadable CV that user can download if they wish to , however the document is password protected and so editing and copying on the document is not possible and is only available on the mobile version of the work.html page.
 
@@ -106,15 +121,25 @@ I have designed the markup in way for the mobile version and desktop version of 
 are similar I could have just made the desktop version of this site a blown up version of the mobile site, but I did not want to that as it did not look aesthetically good, however I have kept the styles and overall information organization of the site the same.
 
 The script technologies used to create this website are vanilla/pure JavaScript and External JavaScript libraries. I have used XML WEB API and the new Fetch API Request to get server stored JSON data.
-Using these technologies has provided me a sound understanding of how to use JavaScript 3rd party libraries and the native JavaScript language to manipulate the DOM.
+Using these technologies has provided me a sound understanding of how to use JavaScript 3rd party libraries and the native JavaScript language to manipulation of the DOM. I have also used tippy.js for some tool tip features on mouse enter events, however the options regarding were coded by myself.
+Any 3rd party libraries are hosted on a CDN this includes tippy.js and fontawsome. Sometime a rawGit CDN needs to be hosted for these repositories if script fails to load resource from origin in the chrome inspector.
 
 Feel free to download any files located on the repository if you wish to keep them locally.
 
 ## Validation and Verification
 
-In my website I have included direct links to the validation tools for checking the pages of my website. I have already checked weather my website passes validation both in HTML and CSS.
+In my website I have included direct links to the validation tools for checking the pages of my website when it come to marking.
+I have personally checked weather my website passes validation both in HTML and CSS.
 
 ## *References*
 (2017) W3Schools Online Web Tutorials. [Online] Available from: [](https://www.w3schools.com/) [Accessed 1/11/2017]
+
 (2017) CSS-Tricks. [Online] Available from: [](https://css-tricks.com/) [Accessed 1/11/2017]
+
 (2017) Create your Google Sitemap Online - XML Sitemaps Generator. [Online] Available from: [](https://www.xml-sitemaps.com/) [Accessed 2/11/2017]
+
+Gandy, D. (2017). Font Awesome, the iconic font and CSS toolkit. [Online] Fontawesome.io. Available from: []http://fontawesome.io/ [Accessed 15/11/2017]
+
+(2017). Ionicons: The premium icon font for Ionic Framework. [Online] Available from: []http://ionicons.com/ [Accessed 15/11/2017]
+
+(2017) Tippy.js - Vanilla JS Tooltip Library. [Online] Available from: []https://atomiks.github.io/tippyjs/ [Accessed 3/12/2017]

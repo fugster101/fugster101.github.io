@@ -13,6 +13,7 @@
   <!--
   Mobile HTML Markup all here. ID and Class names have symantic menaing.
 -->
+<main>
 <div class="mobile-wrapper">
   <div class="mobile-hero-section">
     <div class="mobile-top-color-bar">
@@ -40,14 +41,6 @@
     <h1>Furqan Agwan</h1>
     <p class="title"> </p>
     <p> De Montfort University</p>
-  </div>
-</section>
-<section class="mobile-section-two">
-  <div class="card2">
-    <h1>Where have I been</h1>
-  </div>
-  <div class="mobile-image-gallery">
-
   </div>
 </section>
 <section class="mobile-section-three">
@@ -87,10 +80,13 @@ Beacuse of parallax back feature desktop has its on markup but still mobile firs
     <div class="desktop-speach-one-content">
       <p>
         my name is Furqan Agwan.
-        I am a final year Computer Science student studying at <span id="dmu">De Montfort University</span>, Leicester.
+        I am a final year Computer Science student studying at <span title="Double click to visit" id="dmu">De Montfort University</span>, Leicester.
         Some of my hobbies include Basketball, Football, Cricket, Coding and Fitness. I consider myself a avid
         sneakerhead with a strong intrest in collecting exclusive rare clothing.
       </p>
+      <div id="dmu-tooltip">
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyALpSztx6H-krusxiZ3630T9uFJeqibfFQ&q=De+Montfort+University" allowfullscreen></iframe>
+      </div>
       <br>
       <p>
         During my time at University I have worked with many functional and object-oriented languages,
@@ -131,10 +127,38 @@ Beacuse of parallax back feature desktop has its on markup but still mobile firs
       Since you got this far you may wish to follow me on <span id="twitter">twitter</span> if you like to, but just to let you know I spend most of my time at University so I may not reply instantly.
       You can also check out my <span id="linkin">LinkedIn</span> page if you would like to or check out my <span id="insta">instargram</span> page to see where I have been.
     </p>
-</div>
+    <br>
+    <p>
+      This enitre site is under constrcution and will always be under contstrcution until I am a satified,
+      The site was designed as part of one my university module assement. I have learned many new concepts regarding front-end devlopment
+      and also a new language with the use of javascript and a bit of jQuery. This website containts no jQuery all vanila JavaScript.
+    </p>
+    <div id="insta-tooltip">
+      Double click on this text to visit my instargam page
+    </div>
+
+    <!--
+  Can not control height and width of tweet thats on twitter ends, try to manipulate DOM element using CSS but no luck.
+  -->
+    <div id="twitter-tooltip">
+      <blockquote class="twitter-tweet"  data-width="350"  data-height="100"   data-theme="dark">
+        <p lang="en" dir="ltr">How to map JSON collections using JPA and HIBERNATE
+        <a href="https://twitter.com/hashtag/JavaEE?src=hash&amp;ref_src=twsrc%5Etfw">#JavaEE</a>
+        <a href="https://t.co/YhUCXWVjM4">https://t.co/YhUCXWVjM4</a>
+        <a href="https://t.co/QHLeyhtowf">pic.twitter.com/QHLeyhtowf</a>
+      </p>&mdash; Java (@java)
+      <a href="https://twitter.com/java/status/941700629516320769?ref_src=twsrc%5Etfw">December 15, 2017</a>
+    </blockquote>
+      </div>
+    <div id="linkin-tooltip">
+      Double click on this text to visit my LinkedIn page
+    </div>
+    </div>
 </section>
 </div>
+</main>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://unpkg.com/tippy.js@2.0.8/dist/tippy.all.min.js"></script>
 <script src="JavaScript/about.js"></script>
 </body>
 </html>

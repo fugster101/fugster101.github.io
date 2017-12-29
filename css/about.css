@@ -479,6 +479,23 @@ the following defined rule and styles will kick in*/
   .desktop-{
     float: left;
   }
+  #dmu-tooltip{
+    display: none;
+  }
+  #dmu-tooltip iframe{
+    border: 0;
+    height: 150px;
+    width: 150px;
+  }
+  #insta-tooltip{
+    display: none;
+  }
+  #twitter-tooltip{
+    display: none;
+  }
+  #linkin-tooltip{
+    display: none;
+  }
   /* Hiding mobile class starts here*/
   .mobile-wrapper{
     display: none;

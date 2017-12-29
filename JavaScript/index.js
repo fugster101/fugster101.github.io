@@ -1,9 +1,8 @@
 window.addEventListener('load', function(){
   "use strict";
-  time();
-  apitimeanddateRequest();
   fetchRequest();
-
+  apitimeanddateRequest();
+  time();
 /*
 Event handler to handle the enterButton 'click' request, the function simple hides  the overlay display
 and prevents the default action that happens by a normal click event.

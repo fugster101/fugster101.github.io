@@ -1,5 +1,6 @@
 window.addEventListener('load', function() {
   "use strict";
+
   document.getElementById("backbutton-black-up").addEventListener('click' , backbutton, true);
 
 
@@ -7,25 +8,69 @@ window.addEventListener('load', function() {
 
   let urlRedirects = ["http://www.dmu.ac.uk/","https://twitter.com/FurqanKadri","https://www.linkedin.com/in/furqan-agwan/", "https://www.instagram.com/fugster/?hl=en"];
 
-
+/*DMU text handlers and Listener*/
   document.getElementById('dmu').addEventListener('dblclick', function () {
     window.location.href = urlRedirects[0];
   } );
-
-
+  document.getElementById('dmu').addEventListener('mouseover', function () {
+    let dmu = document.getElementById('dmu');
+    document.getElementById('dmu-tooltip').style.display = "initial";
+    tippy(dmu, {
+      html: document.querySelector('#dmu-tooltip'),
+      placement: 'top',
+      interactive: true,
+      arrow: true,
+      animation: 'shift-toward',
+      distance: 15
+    });
+  });
+/*Twitter handlers and Listener*/
   document.getElementById('twitter').addEventListener('dblclick', function () {
     window.location.href = urlRedirects[1];
   } );
-
-
+  document.getElementById('twitter').addEventListener('mouseover', function () {
+    let twitter = document.getElementById('twitter');
+    document.getElementById('twitter-tooltip').style.display = "initial";
+    tippy(twitter, {
+      html: document.querySelector('#twitter-tooltip'),
+      placement: 'bottom',
+      interactive: true,
+      arrow: true,
+      animation: 'shift-toward',
+      distance: 15
+    });
+  });
+/*linkedIn handlers and Listener*/
   document.getElementById('linkin').addEventListener('dblclick', function () {
     window.location.href = urlRedirects[2];
   } );
-
-
+  document.getElementById('linkin').addEventListener('mouseover', function () {
+    let linkin = document.getElementById('linkin');
+    document.getElementById('linkin-tooltip').style.display = "initial";
+    tippy(linkin, {
+      html: document.querySelector('#linkin-tooltip'),
+      placement: 'bottom',
+      arrow: true,
+      animation: 'shift-toward',
+      distance: 15
+    });
+  });
+/*Instagram handlers and Listener*/
   document.getElementById('insta').addEventListener('dblclick', function () {
     window.location.href = urlRedirects[3];
   } );
+  document.getElementById('insta').addEventListener('mouseover', function () {
+    let insta = document.getElementById('insta');
+    document.getElementById('insta-tooltip').style.display = "initial";
+    tippy(insta, {
+      html: document.querySelector('#insta-tooltip'),
+      placement: 'bottom',
+      arrow: true,
+      animation: 'shift-toward',
+      distance: 15
+    });
+    //let images = ["../images/imageGallery/dubai-mobile.png","../images/imageGallery/jordan-mobile.png","../images/imageGallery/toronto-mobile.png"];
+  });
 
 
   document.getElementById('chevron-mobile-icon').addEventListener('click', function () {
@@ -46,6 +91,8 @@ window.addEventListener('load', function() {
   document.getElementsByClassName('title')[0].innerHTML = dataFill() + '&nbsp;' + "Student";
   colorLanguages();
 });
+
+
 function colorLanguages() {
   document.getElementById('dmu').style.color = "#A30005";
   document.getElementById('dmu').style.cursor = "pointer";
@@ -109,6 +156,13 @@ function scrollFunction(){
   }
 }
 
+
+/*
+Quick fucntion to set disply to initial created because this takes to long to wite evey time
+*/
+function displayon(id) {
+document.getElementById(id).style.disply = "initial";
+}
 /*Custom scroll to function similar to jquerys version but a pure vanila solution*/
 function scrollTo(element, to, duration) {
   if (duration <= 0) return;
@@ -122,7 +176,7 @@ function scrollTo(element, to, duration) {
 }
 
 /*
-Using google maps via Javascript need to umport script tag provided by google in order for init fucntion to be recognised but this function will not be used
+Using google maps via Javascript need to inport script tag provided by google in order for init fucntion to be recognised but this function will not be used
 */
 function initMap() {
   let LatLng = {lat:-25.365, lng: 131.044};

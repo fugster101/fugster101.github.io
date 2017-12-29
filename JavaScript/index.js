@@ -1,9 +1,9 @@
 window.addEventListener('load', function(){
   "use strict";
-
+  time();
   apitimeanddateRequest();
   fetchRequest();
-  time();
+
 
   document.getElementById('enterButton').addEventListener('click', function (e) {
     e.preventDefault();
@@ -27,6 +27,7 @@ function apitimeanddateRequest(){
     let userMonth = dataObj.data.datetime.month_full;
     let userMonthDay = dataObj.data.datetime.month_days;
     let userYear = dataObj.data.datetime.year;
+    let amORpm = dataObj.data.datetime.hour_am_pm;
     document.getElementById('day').innerHTML = userDay;
     document.getElementById('date').innerHTML = userMonth+'&nbsp'+userMonthDay+","+'&nbsp'+ userYear;
   }

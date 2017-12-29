@@ -95,8 +95,10 @@ The navigation styles for the mobile website start here
   left: 15px;
   margin: 0;
   border-radius: 70%;
-  opacity: 0.9;
-  cursor: pointer;
+  opacity: 1;
+}
+#furqan-icon{
+    animation: furqaniconflash 3s 2;
 }
 .mobile-side-nav{
   height: 100%;
@@ -157,14 +159,16 @@ only be visble based on the result on the XMLHTTP JSON request.
 }
 .mobile-quote-section{
   position: absolute;
-  left: 15px;
-  top: 52%;
+  padding-right: 15px;
+  left: 8px;
+  top: 51%;
   width: 100%;
   color: white;
   font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
   text-align: left;
+  word-wrap: break-word;
 }
 .mobile-footer{
   position: absolute;
